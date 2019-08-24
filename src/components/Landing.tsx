@@ -10,7 +10,7 @@ const Landing = () => {
   const initializeWriter = () => {
     const textElement = document.querySelector(".typed-intro");
 
-    if (textElement != undefined) {
+    if (textElement !== null) {
       new TypeWriter(
         textElement,
         ["Hi, I'm Dan.", "I'm a full-stack dev."],
@@ -20,13 +20,17 @@ const Landing = () => {
   };
 
   return (
-    <div>
-      <h1 className="typed-intro relative text-xl inline-block font-raleway-bold text-white uppercase wide-letter-spacing"></h1>
+    <div className="mt-4 lg:mt-16">
+      <h1 className="typed-intro relative text-xl inline-block font-raleway-bold text-white uppercase wide-letter-spacing">
+        Daniel Agg
+      </h1>
       <hr className="bg-white w-1/5 border-0 mt-2" style={{ height: "2px" }} />
-      <p>
-        full stack developer, employed by Glownexus SA this is a second line of
-        text to add, add and maybe a bit longer
-      </p>
+      <div className="text-white mt-6 opacity-75">
+        <p>full stack developer, employed by Glownexus SA</p>
+        <p className="mt-2 lg:mt-0">
+          this is a second line of text to add, add and maybe a bit longer
+        </p>
+      </div>
     </div>
   );
 };
