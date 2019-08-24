@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import "./style.css";
-import TypeWriter from "../typewriter";
+import TypeWriter from "../../typewriter";
 
 const Landing = () => {
   useEffect(() => {
