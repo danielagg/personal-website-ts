@@ -3,7 +3,22 @@
 @tailwind utilities;
 
 /* Custom styling */
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,800&display=swap");
 
 .primary-blue {
   background: #1722b5;
+}
+
+.font-raleway {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+}
+
+.font-raleway-bold {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+}
+
+.wide-letter-spacing {
+  letter-spacing: 0.25em;
 }

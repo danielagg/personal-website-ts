@@ -1,0 +1,22 @@
+.typed-intro::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -0.7rem;
+  width: 8px;
+  height: 100%;
+  background: white;
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
