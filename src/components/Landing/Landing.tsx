@@ -21,9 +21,12 @@ const Landing = () => {
 
   return (
     <div className="mt-4 lg:mt-16">
-      <h1 className="typed-intro relative text-xl inline-block font-raleway-black text-white uppercase wide-letter-spacing">
-        Daniel Agg
-      </h1>
+      <div style={{ height: "2em" }}>
+        <h1 className="typed-intro relative text-xl inline-block font-raleway-black text-white uppercase wide-letter-spacing">
+          Daniel Agg
+        </h1>
+      </div>
+
       <hr className="bg-white w-1/5 border-0 mt-2" style={{ height: "2px" }} />
       <div className="text-white mt-6 opacity-75">
         <p>full stack developer, employed by Glownexus SA</p>
