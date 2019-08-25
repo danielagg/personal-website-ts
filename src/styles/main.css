@@ -6,15 +6,19 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway:400,700,800&display=swap");
 
 .primary-blue {
-  color: #020472;
+  color: #2409b9;
 }
 
 .bg-primary-blue {
-  background: #020472;
+  background: #2409b9;
 }
 
 .bg-primary-blue-gradient {
   background: linear-gradient(45deg, #020472 0, #2c10ca 50%, #2409b9 100%);
+}
+
+.border-primary-blue {
+  border-color: #2409b9;
 }
 
 .font-raleway {
