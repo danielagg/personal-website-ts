@@ -1,6 +1,9 @@
 import React from "react";
 import "./style.css";
 
+// Components
+import PortfolioItem from "./PortfolioItem";
+
 const PortfolioItemContainer = () => {
   return (
     <div>
@@ -8,11 +11,21 @@ const PortfolioItemContainer = () => {
         a few projects I've worked on:
       </h2>
       <div className="container">
-        <div className="card card-1"></div>
-        <div className="card card-2"></div>
-        <div className="card card-3"></div>
-        <div className="card card-4"></div>
-        <div className="card card-5"></div>
+        <div className="card-1">
+          <PortfolioItem />
+        </div>
+        <div className="card-2">
+          <PortfolioItem />
+        </div>
+        <div className="card-3">
+          <PortfolioItem />
+        </div>
+        <div className="card-4">
+          <PortfolioItem />
+        </div>
+        <div className="card-5">
+          <PortfolioItem />
+        </div>
       </div>
     </div>
   );

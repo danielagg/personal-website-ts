@@ -21,7 +21,7 @@ const Landing = () => {
 
   return (
     <div className="mt-4 lg:mt-16">
-      <h1 className="typed-intro relative text-xl inline-block font-raleway-bold text-white uppercase wide-letter-spacing">
+      <h1 className="typed-intro relative text-xl inline-block font-raleway-black text-white uppercase wide-letter-spacing">
         Daniel Agg
       </h1>
       <hr className="bg-white w-1/5 border-0 mt-2" style={{ height: "2px" }} />

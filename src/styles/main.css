@@ -3,10 +3,18 @@
 @tailwind utilities;
 
 /* Custom styling */
-@import url("https://fonts.googleapis.com/css?family=Raleway:400,800&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,700,800&display=swap");
 
 .primary-blue {
-  background: #1722b5;
+  color: #020472;
+}
+
+.bg-primary-blue {
+  background: #020472;
+}
+
+.bg-primary-blue-gradient {
+  background: linear-gradient(45deg, #020472 0, #2c10ca 50%, #2409b9 100%);
 }
 
 .font-raleway {
@@ -15,6 +23,11 @@
 }
 
 .font-raleway-bold {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+}
+
+.font-raleway-black {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
 }
