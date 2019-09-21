@@ -6,19 +6,23 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway:400,700,800&display=swap");
 
 .primary-blue {
-  color: #2409b9;
+  color: rgb(59, 6, 129);
 }
 
 .bg-primary-blue {
-  background: #2409b9;
+  background: rgb(59, 6, 129);
 }
 
 .bg-primary-blue-gradient {
-  background: linear-gradient(45deg, #020472 0, #2c10ca 50%, #2409b9 100%);
+  /* background: linear-gradient(45deg, #020472 0, #2c10ca 50%, #2409b9 100%); */
+  /* background: linear-gradient(45deg, #720231 0, #ca1048 50%, #b90993 100%); */
+  /* background: linear-gradient(45deg, #3f1561 0, #711c79 50%, #6b2d5d 100%); */
+  /* background: linear-gradient(45deg, #1c5e4f 0, #1ea566 50%, #a736db 100%); */
+  background: linear-gradient(45deg, #060881 0, #7948b1 50%, #bf59ee 100%);
 }
 
 .border-primary-blue {
-  border-color: #2409b9;
+  border-color: rgb(59, 6, 129);
 }
 
 .font-raleway {
