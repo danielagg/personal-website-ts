@@ -1,5 +1,8 @@
 import React from "react";
 
+// Components
+import Button, { Variant, Thickness } from "../Shared/Button/Button";
+
 const About = () => {
   return (
     <div>
@@ -30,9 +33,14 @@ const About = () => {
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
             Voluptatibus ad minima iusto suscipit ab laudantium.
           </p>
+          <div className="mt-4">
+            <Button
+              caption="download cv (pdf)"
+              variant={Variant.BlueBorderOnly}
+              thickness={Thickness.Wider}
+            />
+          </div>
         </div>
-
-        <p></p>
       </div>
     </div>
   );
