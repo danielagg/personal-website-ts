@@ -10,7 +10,7 @@ const PortfolioItemContainer = () => {
 
   return (
     <div>
-      <h2 className="mt-24 text-white text-xl">projects I've worked on:</h2>
+      <h2 className="mt-24 text-white text-xl">projects I've worked on</h2>
       <div className="container">
         <div className="card-1">
           <PortfolioItem item={context.projects[0]} height={60} width={50} />
