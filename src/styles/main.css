@@ -4,6 +4,7 @@
 
 /* Custom styling */
 @import url("https://fonts.googleapis.com/css?family=Raleway:400,700,800&display=swap");
+@import "styles/animations.css";
 
 .primary-blue {
   color: rgb(59, 6, 129);
@@ -42,4 +43,24 @@
 
 .wide-letter-spacing {
   letter-spacing: 0.25em;
+}
+
+.moveInFromTopAnimation {
+  animation: moveInFromTop 0.4s ease-out;
+}
+
+.moveInFromBottomAnimation {
+  animation: moveInFromTop 0.4s ease-out;
+}
+
+.moveInFromLeftAnimation {
+  animation: moveInFromLeft 0.4s ease-out;
+}
+
+.moveInFromRightAnimation {
+  animation: moveInFromRight 0.4s ease-out;
+}
+
+.easeInWithOpacityChangeAnimation {
+  animation: easeInWithOpacityChange 0.4s ease-out;
 }
