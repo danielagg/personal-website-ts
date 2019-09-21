@@ -29,9 +29,9 @@ const Landing = () => {
 
       <hr className="bg-white w-1/5 border-0 mt-2" style={{ height: "2px" }} />
       <div className="text-white mt-6 opacity-75">
-        <p>full stack developer, employed by Glownexus SA</p>
+        <p>I'm a full stack developer, employed by Glownexus SA.</p>
         <p className="mt-2 lg:mt-0">
-          this is a second line of text to add, add and maybe a bit longer
+          I have experience with React, .NET Core and NodeJS.
         </p>
       </div>
     </div>

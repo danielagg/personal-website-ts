@@ -10,11 +10,11 @@ const About = () => {
       <div className="mt-6 flex font-raleway text-white">
         <div className="opacity-75 w-3/5 pr-12">
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque illo
-            veritatis ad dicta asperiores nobis provident in odit nihil sit
-            explicabo obcaecati aperiam similique tempore id harum, nulla, rem
-            suscipit aliquid nemo quis laudantium? Maiores ipsum totam magni
-            voluptas eaque!
+            I'm a software developer from Hungary with more than three years of
+            professional experience. I've worked primarily on enterprise
+            applications’ backends, as well as various front ends, while
+            crafting modern web applications as hobby pet projects, such as this
+            site.
           </p>
           <p className="mt-4">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga nam
@@ -33,7 +33,7 @@ const About = () => {
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
             Voluptatibus ad minima iusto suscipit ab laudantium.
           </p>
-          <div className="mt-4">
+          <div className="mt-6">
             <Button
               caption="download cv (pdf)"
               variant={Variant.BlueBorderOnly}
