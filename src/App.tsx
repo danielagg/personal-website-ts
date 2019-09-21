@@ -7,6 +7,7 @@ import { PortfolioContext, PortfolioState } from "./state/PortfolioState";
 // Components
 import Landing from "./components/Landing/Landing";
 import PortfolioItemContainer from "./components/Portfolio/PortfolioItemContainer";
+import About from "./components/About/About";
 
 const App = () => {
   const InitialState: PortfolioState = {
@@ -56,6 +57,7 @@ const App = () => {
         <div className="p-4 ml-2 lg:mx-auto lg:w-4/5">
           <Landing />
           <PortfolioItemContainer />
+          <About />
         </div>
       </div>
     </PortfolioContext.Provider>
