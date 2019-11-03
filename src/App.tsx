@@ -17,7 +17,7 @@ const App = () => {
         id: 1,
         name: "Company Event Managing Platform",
         description:
-          "An app created in the MERN framework to provide event browsing, creating and joining funcionalities. Support identity management, user roles.",
+          "An app created in the MERN framework to provide event browsing, creating and joining funcionalities. Supports identity management, user roles.",
         detailsLink: "event-organizer",
         githubLink: "https://github.com/danielagg/event-organizer/"
       },
