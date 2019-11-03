@@ -1,6 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 // Components
@@ -44,6 +45,19 @@ const About = () => {
                   <FontAwesomeIcon icon={faLinkedin} />
                 </span>
                 LinkedIn
+              </a>
+            </li>
+            <li className="mt-2">
+              <a
+                href="https://github.com/danielagg/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-purple-400"
+              >
+                <span className="pr-2">
+                  <FontAwesomeIcon icon={faGithub} />
+                </span>
+                GitHub
               </a>
             </li>
             <li className="mt-2">
