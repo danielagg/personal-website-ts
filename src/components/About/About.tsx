@@ -11,8 +11,8 @@ const About = () => {
   return (
     <div>
       <h2 className="mt-24 text-white text-xl">about me</h2>
-      <div className="mt-6 flex font-raleway text-white">
-        <div className="opacity-75 w-3/5 pr-12">
+      <div className="mt-6 lg:flex block font-raleway text-white">
+        <div className="opacity-75 lg:w-3/5 w-full pr-12">
           <p>
             I'm a software developer from Hungary with more than three years of
             professional experience. I've worked primarily on enterprise
@@ -20,7 +20,7 @@ const About = () => {
             crafting modern web applications as hobby pet projects, such as this
             site.
           </p>
-          <p className="mt-4">
+          <p className="lg:mt-4 mt-8">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga nam
             quasi quod molestiae vel rem dolor sequi expedita aliquid amet omnis
             illum delectus natus, rerum laboriosam ullam modi consectetur
@@ -28,12 +28,12 @@ const About = () => {
           </p>
         </div>
 
-        <div className="opacity-75 w-2/5">
+        <div className="opacity-75 lg:w-2/5 w-full mt-8 lg:mt-0">
           <p>
             Please note that at the moment, I'm not actively looking for new
             professional opportunities.
           </p>
-          <ul className="mt-4">
+          <ul className="lg:mt-4 mt-8">
             <li>
               <a
                 href="https://www.linkedin.com/in/danielagg/"
@@ -67,7 +67,7 @@ const About = () => {
               daniel.agg@outlook.com
             </li>
           </ul>
-          <div className="mt-6">
+          <div className="lg:mt-4 mt-8">
             <Button
               caption="download cv (pdf)"
               variant={Variant.White}
