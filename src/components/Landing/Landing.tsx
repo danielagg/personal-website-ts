@@ -31,7 +31,7 @@ const Landing = () => {
       <div className="text-white mt-6 opacity-75 moveInFromTopAnimation">
         <p>I'm a full stack developer, employed by Glownexus SA.</p>
         <p className="mt-2 lg:mt-0">
-          I have experience with React, .NET Core and NodeJS.
+          I have experience with React, .NET Core, NodeJS and Azure.
         </p>
       </div>
     </div>

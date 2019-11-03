@@ -1,4 +1,7 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 // Components
 import Button, { Variant, Thickness } from "../Shared/Button/Button";
@@ -26,18 +29,35 @@ const About = () => {
 
         <div className="opacity-75 w-2/5">
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta nemo
-            nisi voluptas illo voluptatibus reiciendis?
+            Please note that at the moment, I'm not actively looking for new
+            professional opportunities.
           </p>
-          <p className="mt-4">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Voluptatibus ad minima iusto suscipit ab laudantium.
-          </p>
+          <ul className="mt-4">
+            <li>
+              <a
+                href="https://www.linkedin.com/in/danielagg/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-purple-400"
+              >
+                <span className="pr-2">
+                  <FontAwesomeIcon icon={faLinkedin} />
+                </span>
+                LinkedIn
+              </a>
+            </li>
+            <li className="mt-2">
+              <span className="pr-2">
+                <FontAwesomeIcon icon={faEnvelope} />
+              </span>
+              daniel.agg@outlook.com
+            </li>
+          </ul>
           <div className="mt-6">
             <Button
               caption="download cv (pdf)"
-              variant={Variant.BlueBorderOnly}
-              thickness={Thickness.Wider}
+              variant={Variant.White}
+              thickness={Thickness.Widest}
             />
           </div>
         </div>
