@@ -50,3 +50,23 @@
     opacity: 1;
   }
 }
+
+.moveInFromTopAnimation {
+  animation: moveInFromTop 0.4s ease-out;
+}
+
+.moveInFromBottomAnimation {
+  animation: moveInFromTop 0.4s ease-out;
+}
+
+.moveInFromLeftAnimation {
+  animation: moveInFromLeft 0.4s ease-out;
+}
+
+.moveInFromRightAnimation {
+  animation: moveInFromRight 0.4s ease-out;
+}
+
+.easeInWithOpacityChangeAnimation {
+  animation: easeInWithOpacityChange 0.4s ease-out;
+}

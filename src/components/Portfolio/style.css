@@ -3,31 +3,44 @@
   display: grid;
   grid-column-gap: 1em;
   grid-row-gap: 1em;
-  grid-template-areas:
-    "a a a a b b"
-    "a a a a b b"
-    "a a a a c c"
-    "d d e e c c"
-    "d d e e c c";
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    display: block;
+  }
+  .card-1,
+  .card-2,
+  .card-3,
+  .card-4,
+  .card-5 {
+    margin: 1.5em 0;
+  }
 }
 
 .card-1 {
-  grid-area: a;
-  align-content: center;
+  grid-column: 1 / span 4;
+  grid-row: 1 / span 3;
 }
 
 .card-2 {
-  grid-area: b;
+  grid-column: 5 / span 2;
+  grid-row: 1 / span 2;
 }
 
 .card-3 {
-  grid-area: d;
+  grid-column: 1 / span 2;
+  grid-row: 4 / span 2;
 }
 
 .card-4 {
-  grid-area: e;
+  grid-column: 3 / span 2;
+  grid-row: 4 / span 2;
 }
 
 .card-5 {
-  grid-area: c;
+  grid-column: 5 / span 2;
+  grid-row: 3 / span 3;
 }

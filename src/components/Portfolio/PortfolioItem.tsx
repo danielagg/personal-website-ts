@@ -7,16 +7,11 @@ import Button, { Variant, Thickness } from "../Shared/Button/Button";
 
 type PortfolioItemProp = {
   item: PortfolioItemDetails;
-  height: number;
-  width: number;
 };
 
-const PortfolioItem = ({ item, height, width }: PortfolioItemProp) => {
+const PortfolioItem = ({ item }: PortfolioItemProp) => {
   return (
-    <div
-      className="bg-white p-8 primary-blue"
-      style={{ height: `${height}vh`, width: `${width}vw` }}
-    >
+    <div className="bg-white p-6 primary-blue h-full w-full">
       <p className="text-xl uppercase font-raleway-bold wide-letter-spacing">
         {item.name}
       </p>

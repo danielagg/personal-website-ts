@@ -15,11 +15,7 @@
 }
 
 .bg-primary-blue-gradient {
-  /* background: linear-gradient(45deg, #020472 0, #2c10ca 50%, #2409b9 100%); */
-  /* background: linear-gradient(45deg, #720231 0, #ca1048 50%, #b90993 100%); */
-  /* background: linear-gradient(45deg, #3f1561 0, #711c79 50%, #6b2d5d 100%); */
-  /* background: linear-gradient(45deg, #1c5e4f 0, #1ea566 50%, #a736db 100%); */
-  background: linear-gradient(45deg, #060881 0, #7948b1 50%, #bf59ee 100%);
+  background: linear-gradient(45deg, #390a58 0, #651685 50%, #5e31c9 100%);
 }
 
 .border-primary-blue {
@@ -43,24 +39,4 @@
 
 .wide-letter-spacing {
   letter-spacing: 0.25em;
-}
-
-.moveInFromTopAnimation {
-  animation: moveInFromTop 0.4s ease-out;
-}
-
-.moveInFromBottomAnimation {
-  animation: moveInFromTop 0.4s ease-out;
-}
-
-.moveInFromLeftAnimation {
-  animation: moveInFromLeft 0.4s ease-out;
-}
-
-.moveInFromRightAnimation {
-  animation: moveInFromRight 0.4s ease-out;
-}
-
-.easeInWithOpacityChangeAnimation {
-  animation: easeInWithOpacityChange 0.4s ease-out;
 }
