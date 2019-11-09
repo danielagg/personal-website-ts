@@ -30,21 +30,21 @@ const App = () => {
       },
       {
         id: 3,
-        name: "Sertave - Furniture Store",
-        description: "A web application using the MERN framework.",
+        name: "Spotify App",
+        description: "A web application consuming Spotify's API.",
         detailsLink: "event-organizer",
         githubLink: "https://github.com/danielagg/event-organizer/"
       },
       {
         id: 4,
         name: "Personal Website",
-        description: "A web application using the MERN framework.",
-        detailsLink: "event-organizer",
+        description: "A simple React app; this exact site.",
+        detailsLink: "personal-site",
         githubLink: "https://github.com/danielagg/event-organizer/"
       },
       {
         id: 5,
-        name: "TBD",
+        name: "Sertave - Furniture Store",
         description: "A web application using the MERN framework.",
         detailsLink: "event-organizer",
         githubLink: "https://github.com/danielagg/event-organizer/"

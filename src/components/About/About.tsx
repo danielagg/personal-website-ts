@@ -70,6 +70,7 @@ const About = () => {
           <div className="lg:mt-4 mt-8">
             <Button
               caption="download cv (pdf)"
+              url="#"
               variant={Variant.White}
               thickness={Thickness.Widest}
             />

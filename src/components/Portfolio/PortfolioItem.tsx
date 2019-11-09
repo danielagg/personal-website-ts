@@ -19,12 +19,15 @@ const PortfolioItem = ({ item }: PortfolioItemProp) => {
       <div className="absolute bottom-0 mb-6 flex">
         <Button
           caption="details"
+          url={item.detailsLink}
           variant={Variant.Blue}
           thickness={Thickness.Wider}
         />
         <div className="ml-2">
           <Button
             caption="github"
+            isNewTab={true}
+            url={item.githubLink}
             variant={Variant.BlueBorderOnly}
             thickness={Thickness.Wider}
           />

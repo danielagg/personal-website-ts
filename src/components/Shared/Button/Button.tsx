@@ -15,6 +15,8 @@ export enum Thickness {
 
 type ButtonProp = {
   caption: string;
+  url: string;
+  isNewTab?: boolean;
   variant?: Variant;
   thickness?: Thickness;
 };
@@ -22,11 +24,14 @@ type ButtonProp = {
 const Button = ({
   caption,
   variant = Variant.White,
-  thickness = Thickness.Normal
+  thickness = Thickness.Normal,
+  isNewTab = false,
+  url
 }: ButtonProp) => {
   const staticContainerStyle = "inline-block cursor-pointer";
-  const whiteVariantStlye = "bg-white primary-blue";
-  const blueVariantStlye = "bg-primary-blue text-white";
+  const whiteVariantStlye = "bg-white primary-blue border-2 border-white";
+  const blueVariantStlye =
+    "bg-primary-blue text-white border-2 border-primary-blue";
   const blueBorderOnlyVariantStlye =
     "bg-white border-2 border-primary-blue primary-blue";
   const whiteBorderOnlyVariantStlye =
@@ -74,9 +79,15 @@ const Button = ({
   };
 
   return (
-    <div className={getContainerStyle()}>
-      <p>{caption}</p>
-    </div>
+    <a
+      href={url}
+      target={isNewTab ? "_blank" : "_self"}
+      rel="noopener noreferrer"
+    >
+      <div className={getContainerStyle()}>
+        <p>{caption}</p>
+      </div>
+    </a>
   );
 };
 
