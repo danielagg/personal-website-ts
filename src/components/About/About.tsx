@@ -21,10 +21,9 @@ const About = () => {
             site.
           </p>
           <p className="lg:mt-4 mt-8">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga nam
-            quasi quod molestiae vel rem dolor sequi expedita aliquid amet omnis
-            illum delectus natus, rerum laboriosam ullam modi consectetur
-            cumque.
+            I'm mostly familiar with technologies such as React (inc. redux,
+            jest), ASP.Net Core (inc. Entity Framework Core) and Microsoft
+            Azure. For more detailed information, please refer to my CV.
           </p>
         </div>
 
