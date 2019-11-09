@@ -9,7 +9,7 @@ import Button, { Variant, Thickness } from "../Shared/Button/Button";
 
 const About = () => {
   return (
-    <div>
+    <div className="moveInFromBottomAnimation">
       <h2 className="mt-24 text-white text-xl">about me</h2>
       <div className="mt-6 lg:flex block font-raleway text-white">
         <div className="opacity-75 lg:w-3/5 w-full pr-12">
