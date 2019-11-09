@@ -5,7 +5,7 @@ import { PortfolioContext, PortfolioState } from "../../state/PortfolioState";
 // Components
 import PortfolioItem from "./PortfolioItem";
 
-const PortfolioItemContainer = () => {
+const PortfolioItemCardContainer = () => {
   const context = useContext<PortfolioState>(PortfolioContext);
 
   return (
@@ -32,4 +32,4 @@ const PortfolioItemContainer = () => {
   );
 };
 
-export default PortfolioItemContainer;
+export default PortfolioItemCardContainer;

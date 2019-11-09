@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import "./style.css";
 import TypeWriter from "../../typewriter";
 
-const Landing = () => {
+const LandingHeader = () => {
   useEffect(() => {
     initializeWriter();
   }, []);
@@ -38,4 +38,4 @@ const Landing = () => {
   );
 };
 
-export default Landing;
+export default LandingHeader;

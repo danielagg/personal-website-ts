@@ -7,7 +7,7 @@ export const InitialState: PortfolioState = {
       name: "Company Event Managing Platform",
       description:
         "An app created in the MERN framework to provide event browsing, creating and joining funcionalities. Supports identity management, user roles.",
-      detailsLink: "#",
+      detailsLink: "company-event-manager",
       githubLink: "#"
     },
     {
