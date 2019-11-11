@@ -22,12 +22,15 @@ const LandingHeader = () => {
   return (
     <div className="mt-4 lg:mt-16">
       <div style={{ height: "2em" }}>
-        <h1 className="typed-intro moveInFromLeftAnimation relative text-xl inline-block font-raleway-black text-white uppercase wide-letter-spacing">
+        <h1 className="typed-intro moveInFromLeftAnimation relative lg:text-3xl text-lg inline-block font-raleway-black text-white uppercase wide-letter-spacing">
           Daniel Agg
         </h1>
       </div>
 
-      <hr className="bg-white w-1/5 border-0 mt-2" style={{ height: "2px" }} />
+      <hr
+        className="bg-white w-1/5 border-0 lg:mt-4 mt-2"
+        style={{ height: "2px" }}
+      />
       <div className="text-white mt-6 opacity-75 moveInFromTopAnimation">
         <p>I'm a full stack developer, employed by Glownexus SA.</p>
         <p className="mt-2 lg:mt-0">
