@@ -19,7 +19,7 @@ const PortfolioItem = ({ item }: PortfolioItemProp) => {
       <div className="absolute bottom-0 mb-6 flex">
         <Button
           caption="details"
-          url={item.detailsLink}
+          url={`/projects/${item.detailsLink}`}
           variant={Variant.Blue}
           thickness={Thickness.Wider}
         />

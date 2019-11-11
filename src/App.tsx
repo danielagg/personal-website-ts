@@ -9,6 +9,7 @@ import { InitialState } from "./state/InitialState";
 // Components
 import LandingContainer from "./components/Landing/LandingContainer";
 import PortfolioItemPageContainer from "./components/PortfolioItem/PortfolioItemPageContainer";
+import NotFoundPage from "./components/NotFound/NotFoundPage";
 
 const App = () => {
   return (
@@ -20,6 +21,8 @@ const App = () => {
             path="/projects/:projectName"
             component={PortfolioItemPageContainer}
           />
+          <Route exact path="/404" component={NotFoundPage} />
+          <Route component={NotFoundPage} />
         </Switch>
       </PortfolioContext.Provider>
     </Router>
