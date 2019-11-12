@@ -42,7 +42,7 @@ const PortfolioItemPageContainer = (props: PortfolioItemPageContainerProps) => {
         <p className="text-xl mt-8">{currentProject.description}</p>
 
         <div className="flex mt-12">
-          <div className="mr-2">
+          <div className="mr-3">
             <Button
                   caption="visit site"
                   url="#"
@@ -59,7 +59,7 @@ const PortfolioItemPageContainer = (props: PortfolioItemPageContainerProps) => {
             />
         </div>
         
-        <NavLink to="/" className="block mt-4">&larr; or go back to the homepage.</NavLink>
+        <NavLink to="/" className="block mt-4 hover:text-purple-400">&larr; or go back to the homepage.</NavLink>
         
         <div className="flex mt-16">
           <div className="pr-24">
@@ -71,7 +71,7 @@ const PortfolioItemPageContainer = (props: PortfolioItemPageContainerProps) => {
           <div className="flex-grow-0 flex-shrink-0 w-1/3">
             <p className="text-2xl">techs used</p>
             <ul className="list-disc mt-4">
-              {currentProject.technologies.map((item, i) => <li className="ml-4 p-1" key={i}>{item}</li> )}
+              {currentProject.technologies.map((item, i) => <li className="ml-4 p-1 opacity-75" key={i}>{item}</li> )}
             </ul>
           </div>
         </div>
