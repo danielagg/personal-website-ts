@@ -13,19 +13,23 @@ import NotFoundPage from "./components/NotFound/NotFoundPage";
 
 const App = () => {
   return (
-    <Router>
-      <PortfolioContext.Provider value={InitialState}>
-        <Switch>
-          <Route exact path="/" component={LandingContainer} />
-          <Route
-            path="/projects/:projectName"
-            component={PortfolioItemPageContainer}
-          />
-          <Route exact path="/404" component={NotFoundPage} />
-          <Route component={NotFoundPage} />
-        </Switch>
-      </PortfolioContext.Provider>
-    </Router>
+    <div className="min-h-screen bg-primary-blue-gradient font-raleway tracking-wider">
+      <div className="p-4 ml-2 lg:mx-auto lg:w-4/5">
+        <Router>
+          <PortfolioContext.Provider value={InitialState}>
+            <Switch>
+              <Route exact path="/" component={LandingContainer} />
+              <Route
+                path="/projects/:projectName"
+                component={PortfolioItemPageContainer}
+              />
+              <Route exact path="/404" component={NotFoundPage} />
+              <Route component={NotFoundPage} />
+            </Switch>
+          </PortfolioContext.Provider>
+        </Router>
+      </div>
+    </div>
   );
 };
 
