@@ -6,6 +6,7 @@ import {
   PortfolioItemDetails
 } from "../../state/PortfolioState";
 import Button, { Variant, Thickness } from "../Shared/Button/Button";
+import { NavLink } from "react-router-dom";
 
 interface PortfolioItemPageContainerProps extends RouteComponentProps {}
 
@@ -57,19 +58,21 @@ const PortfolioItemPageContainer = (props: PortfolioItemPageContainerProps) => {
               thickness={Thickness.Wider}
             />
         </div>
-
-        <div className="flex mt-12">
-          <div className="flex-grow-0 flex-shrink-0 w-1/4">
+        
+        <NavLink to="/" className="block mt-4">&larr; or go back to the homepage.</NavLink>
+        
+        <div className="flex mt-16">
+          <div className="pr-24">
+            <p className="text-2xl">about the project</p>
+            {currentProject.detailedDescription && currentProject.detailedDescription.split('\n').map((item, i) => {
+              return <p key={i} className={`${i !== 0 ? "mt-4" : "mt-2"} opacity-75 leading-relaxed`}>{item}</p>;
+            })}
+          </div>
+          <div className="flex-grow-0 flex-shrink-0 w-1/3">
             <p className="text-2xl">techs used</p>
             <ul className="list-disc mt-4">
               {currentProject.technologies.map((item, i) => <li className="ml-4 p-1" key={i}>{item}</li> )}
             </ul>
-          </div>
-
-          <div>
-            {currentProject.detailedDescription && currentProject.detailedDescription.split('\n').map((item, i) => {
-              return <p key={i} className={`${i !== 0 ? "mt-4" : "mt-2"} opacity-75 leading-relaxed`}>{item}</p>;
-            })}
           </div>
         </div>
 
