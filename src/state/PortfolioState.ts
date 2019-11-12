@@ -4,9 +4,11 @@ export type PortfolioItemDetails = {
   id: number;
   name: string;
   description: string;
+  detailedDescription?: string;
   detailsLink: string;
   githubLink: string;
   technologies: string[];
+  keywords?: string[]
 };
 
 export interface PortfolioState {
