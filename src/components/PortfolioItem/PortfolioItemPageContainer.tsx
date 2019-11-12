@@ -32,8 +32,8 @@ const PortfolioItemPageContainer = (props: PortfolioItemPageContainerProps) => {
 
   if (currentProject) {
     return (
-      <div>
-        <h1>{currentProject.name}</h1>
+      <div className="text-white">
+        <h1 className="text-4xl">{currentProject.name}</h1>
         <p>{currentProject.description}</p>
       </div>
     );
