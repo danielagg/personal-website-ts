@@ -65,13 +65,13 @@ const Button = ({
   const getThicknessSpecificStyles = (): string => {
     switch (thickness) {
       case Thickness.Normal:
-        return "p-2";
+        return "px-4 py-2";
 
       case Thickness.Wider:
-        return "px-6 py-2";
+        return "px-8 py-2";
 
       case Thickness.Widest:
-        return "px-8 py-2";
+        return "px-12 py-2";
 
       default:
         return "";
