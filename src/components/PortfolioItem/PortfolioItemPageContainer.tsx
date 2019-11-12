@@ -62,7 +62,7 @@ const PortfolioItemPageContainer = (props: PortfolioItemPageContainerProps) => {
           
         </div>
         
-        <NavLink to="/" className="block mt-6 lg:mt-4 text-sm lg:text-base hover:text-purple-400">&larr; or go back to the homepage.</NavLink>
+        <NavLink to="/" className="block mt-6 lg:mt-4 text-sm lg:text-base text-purple-400 hover:text-white">&larr; or go back to the homepage.</NavLink>
         
         <div className="flex mt-8 lg:mt-16 flex-col-reverse lg:flex-row">
           <div className="pr-4 lg:pr-24">
