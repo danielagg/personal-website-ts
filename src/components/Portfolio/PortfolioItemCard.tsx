@@ -5,11 +5,11 @@ import { PortfolioItemDetails } from "../../state/PortfolioState";
 // Components
 import Button, { Variant, Thickness } from "../Shared/Button/Button";
 
-type PortfolioItemProp = {
+type PortfolioItemCardProp = {
   item: PortfolioItemDetails;
 };
 
-const PortfolioItem = ({ item }: PortfolioItemProp) => {
+const PortfolioItemCard = ({ item }: PortfolioItemCardProp) => {
   return (
     <div className="relative bg-white p-6 primary-blue h-full w-full">
       <p className="text-xl uppercase font-raleway-bold wide-letter-spacing">
@@ -37,4 +37,4 @@ const PortfolioItem = ({ item }: PortfolioItemProp) => {
   );
 };
 
-export default PortfolioItem;
+export default PortfolioItemCard;
