@@ -34,15 +34,15 @@ const PortfolioItemPageContainer = (props: PortfolioItemPageContainerProps) => {
 
   if (currentProject) {
     return (
-      <div className="text-white">
+      <div className="text-white lg:mt-8">
         <ul>
-          {currentProject.keywords && currentProject.keywords.map((item, i) => <li className="inline-block mr-4 my-2 p-2 bg-purple-600 opacity-75" key={i}>#{item}</li> )}
+          {currentProject.keywords && currentProject.keywords.map((item, i) => <li className="inline-block text-xs lg:text-base mr-4 my-2 p-2 bg-purple-600 opacity-75" key={i}>#{item}</li> )}
         </ul>
-        <h1 className="text-5xl mt-6">{currentProject.name}</h1>
-        <p className="text-xl mt-8">{currentProject.description}</p>
+        <h1 className="lg:text-5xl text-2xl font-raleway-bold mt-4 lg:mt-6">{currentProject.name}</h1>
+        <p className="lg:text-xl text-lg mt-4 lg:mt-8">{currentProject.description}</p>
 
-        <div className="flex mt-12">
-          <div className="mr-3">
+        <div className="flex flex-col lg:flex-row mt-8 lg:mt-12">
+          <div className="lg:mr-3">
             <Button
                   caption="visit site"
                   url="#"
@@ -51,24 +51,27 @@ const PortfolioItemPageContainer = (props: PortfolioItemPageContainerProps) => {
                 />
           </div>
           
-          <Button
-              caption="view on GitHub"
-              url="#"
-              variant={Variant.White}
-              thickness={Thickness.Wider}
-            />
+          <div className="mt-2 lg:mt-0">
+            <Button
+                caption="view on GitHub"
+                url="#"
+                variant={Variant.White}
+                thickness={Thickness.Wider}
+              />
+          </div>
+          
         </div>
         
-        <NavLink to="/" className="block mt-4 hover:text-purple-400">&larr; or go back to the homepage.</NavLink>
+        <NavLink to="/" className="block mt-6 lg:mt-4 text-sm lg:text-base hover:text-purple-400">&larr; or go back to the homepage.</NavLink>
         
-        <div className="flex mt-16">
-          <div className="pr-24">
-            <p className="text-2xl">about the project</p>
+        <div className="flex mt-8 lg:mt-16 flex-col-reverse lg:flex-row">
+          <div className="pr-4 lg:pr-24">
+            <p className="text-2xl mt-6 lg:mt-0">about the project</p>
             {currentProject.detailedDescription && currentProject.detailedDescription.split('\n').map((item, i) => {
               return <p key={i} className={`${i !== 0 ? "mt-4" : "mt-2"} opacity-75 leading-relaxed`}>{item}</p>;
             })}
           </div>
-          <div className="flex-grow-0 flex-shrink-0 w-1/3">
+          <div className="flex-grow-0 flex-shrink-0 lg:w-1/3">
             <p className="text-2xl">techs used</p>
             <ul className="list-disc mt-4">
               {currentProject.technologies.map((item, i) => <li className="ml-4 p-1 opacity-75" key={i}>{item}</li> )}
