@@ -64,17 +64,22 @@ const PortfolioItemPageContainer = (props: PortfolioItemPageContainerProps) => {
         
         <NavLink to="/" className="block mt-6 lg:mt-4 text-sm lg:text-base text-purple-400 hover:text-white">&larr; or go back to the homepage.</NavLink>
         
-        <div className="flex mt-8 lg:mt-16 flex-col-reverse lg:flex-row">
+        <div className=" flex mt-8 lg:mt-16 flex-col-reverse lg:flex-row">
           <div className="pr-4 lg:pr-24">
             <p className="text-2xl mt-6 lg:mt-0">about the project</p>
             {currentProject.detailedDescription && currentProject.detailedDescription.split('\n').map((item, i) => {
               return <p key={i} className={`${i !== 0 ? "mt-4" : "mt-2"} opacity-75 leading-relaxed`}>{item}</p>;
             })}
           </div>
-          <div className="flex-grow-0 flex-shrink-0 lg:w-1/3">
+          <div className="lg:hidden flex-grow-0 flex-shrink-0">
             <p className="text-2xl">techs used</p>
             <ul className="list-disc mt-4">
               {currentProject.technologies.map((item, i) => <li className="ml-4 p-1 opacity-75" key={i}>{item}</li> )}
+            </ul>
+          </div>
+          <div className="hidden lg:block lg:bg-white lg:p-10 primary-blue font-raleway-bold flex-grow-0 flex-shrink-0 lg:w-1/3">
+            <ul className="mt-4">
+              {currentProject.technologies.map((item, i) => <li className={`${i !== 0 ? "mt-4" : "mt-0"} text-lg ml-4 p-1`} key={i}>{item}</li> )}
             </ul>
           </div>
         </div>
