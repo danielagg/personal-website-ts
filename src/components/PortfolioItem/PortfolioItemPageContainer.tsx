@@ -35,6 +35,11 @@ const PortfolioItemPageContainer = (props: PortfolioItemPageContainerProps) => {
       <div className="text-white">
         <h1 className="text-4xl">{currentProject.name}</h1>
         <p>{currentProject.description}</p>
+
+        <p>Technologies used:</p>
+        <ul>
+          {currentProject.technologies.map(t => <li key={t}>{t}</li> )}
+        </ul>
       </div>
     );
   } else {

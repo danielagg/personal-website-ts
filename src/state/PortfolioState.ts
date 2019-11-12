@@ -6,6 +6,7 @@ export type PortfolioItemDetails = {
   description: string;
   detailsLink: string;
   githubLink: string;
+  technologies: string[];
 };
 
 export interface PortfolioState {
