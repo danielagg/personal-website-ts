@@ -29,13 +29,22 @@ const Button = ({
   url
 }: ButtonProp) => {
   const staticContainerStyle = "inline-block cursor-pointer";
-  const whiteVariantStlye = "bg-white primary-blue border-2 border-white";
+  const whiteVariantStlye = "bg-white text-primaryBlue border-2 border-white";
   const blueVariantStlye =
-    "bg-primary-blue text-white border-2 border-primary-blue";
+    "bg-primaryBlue text-white border-2 border-primaryBlue";
   const blueBorderOnlyVariantStlye =
-    "bg-white border-2 border-primary-blue primary-blue";
+    "bg-white border-2 border-primaryBlue primaryBlue";
   const whiteBorderOnlyVariantStlye =
     "bg-transparent border-2 border-white text-white";
+
+  const whiteVariantHoverStyle =
+    "hover:text-black hover:bg-indigo-300 hover:border-indigo-300";
+  const blueVariantHoverStyle =
+    "hover:text-black hover:bg-indigo-300 hover:border-indigo-300";
+  const blueBorderOnlyVariantHoverStyle =
+    "hover:text-black hover:bg-indigo-300 hover:border-indigo-300"
+  const whiteBorderOnlyVariantHoverStyle =
+    "hover:text-black hover:bg-indigo-300 hover:border-indigo-300"
 
   const getContainerStyle = (): string => {
     return (
@@ -50,13 +59,13 @@ const Button = ({
   const getVariantSpecificStyles = (): string => {
     switch (variant) {
       case Variant.White:
-        return whiteVariantStlye;
+        return whiteVariantStlye + " " + whiteVariantHoverStyle;
       case Variant.Blue:
-        return blueVariantStlye;
+        return blueVariantStlye + " " + blueVariantHoverStyle;
       case Variant.BlueBorderOnly:
-        return blueBorderOnlyVariantStlye;
+        return blueBorderOnlyVariantStlye + " " + blueBorderOnlyVariantHoverStyle;
       case Variant.WhiteBorderOnly:
-        return whiteBorderOnlyVariantStlye;
+        return whiteBorderOnlyVariantStlye + " " + whiteBorderOnlyVariantHoverStyle;
       default:
         return "";
     }

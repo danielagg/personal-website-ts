@@ -34,7 +34,7 @@ const PortfolioItemPageContainer = (props: PortfolioItemPageContainerProps) => {
 
   if (currentProject) {
     return (
-      <div className="text-white lg:mt-8">
+      <div className="text-white lg:mt-8 mb-12">
         <ul>
           {currentProject.keywords && currentProject.keywords.map((item, i) => <li className="inline-block text-xs lg:text-base mr-4 my-2 p-2 bg-purple-600 opacity-75" key={i}>#{item}</li> )}
         </ul>
@@ -77,7 +77,7 @@ const PortfolioItemPageContainer = (props: PortfolioItemPageContainerProps) => {
               {currentProject.technologies.map((item, i) => <li className="ml-4 p-1 opacity-75" key={i}>{item}</li> )}
             </ul>
           </div>
-          <div className="hidden lg:block lg:bg-white lg:p-10 primary-blue font-raleway-bold flex-grow-0 flex-shrink-0 lg:w-1/3">
+          <div className="hidden lg:block lg:bg-white lg:p-10 text-primaryBlue font-raleway-bold flex-grow-0 flex-shrink-0 lg:w-1/3">
             <ul className="mt-4">
               {currentProject.technologies.map((item, i) => <li className={`${i !== 0 ? "mt-4" : "mt-0"} text-lg ml-4 p-1`} key={i}>{item}</li> )}
             </ul>

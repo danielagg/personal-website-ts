@@ -4,7 +4,6 @@ import React from "react";
 import LandingHeader from "./LandingHeader";
 import PortfolioItemCardContainer from "../Portfolio/PortfolioItemCardContainer";
 import About from "../About/About";
-import Footer from "../Footer/Footer";
 
 const LandingContainer = () => {
   return (
@@ -12,7 +11,6 @@ const LandingContainer = () => {
       <LandingHeader />
       <PortfolioItemCardContainer />
       <About />
-      <Footer />
     </>
   );
 };

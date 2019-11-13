@@ -10,6 +10,7 @@ import { InitialState } from "./state/InitialState";
 import LandingContainer from "./components/Landing/LandingContainer";
 import PortfolioItemPageContainer from "./components/PortfolioItem/PortfolioItemPageContainer";
 import NotFoundPage from "./components/NotFound/NotFoundPage";
+import Footer from "./components/Footer/Footer";
 
 const App = () => {
   return (
@@ -28,6 +29,7 @@ const App = () => {
             </Switch>
           </PortfolioContext.Provider>
         </Router>
+        <Footer />
       </div>
     </div>
   );
