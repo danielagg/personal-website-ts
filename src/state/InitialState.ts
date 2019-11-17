@@ -9,6 +9,7 @@ export const InitialState: PortfolioState = {
         "An app created in the MERN framework to provide event browsing, creating and joining funcionalities. Supports identity management, user roles.",
       detailsLink: "company-event-manager",
       githubLink: "https://github.com/danielagg/event-organizer",
+      deployedAppLink: "#",
       technologies: [
         "ReactJS",
         "Redux (w/ Saga)",
@@ -28,6 +29,7 @@ export const InitialState: PortfolioState = {
         "A web application (MERN framework), to be used as a platform to rent out musical equipment.",
       detailsLink: "kalodile",
       githubLink: "https://github.com/danielagg/kalodile-ts",
+      deployedAppLink: "#",
       technologies: ["ReactJS"],
       keywords: ["ReactJS", "Docker", "MERN"],
       detailedDescription:
@@ -41,6 +43,7 @@ export const InitialState: PortfolioState = {
         "A reference web application for OData usage with .NET Core.",
       detailsLink: "asp-net-core-odata-ref-app",
       githubLink: "#",
+      deployedAppLink: "#",
       technologies: ["OData", "ASP.NET Core", "Entity Framework Core"],
       keywords: ["OData", "ASP.NET Core"],
       detailedDescription:
@@ -52,6 +55,7 @@ export const InitialState: PortfolioState = {
       description: "A simple React app; this exact site.",
       detailsLink: "personal-site",
       githubLink: "https://github.com/danielagg/personal-website-ts",
+      deployedAppLink: "https://danielagg.com",
       technologies: [
         "ReactJS",
         "Context API",
@@ -70,6 +74,7 @@ export const InitialState: PortfolioState = {
         "A full stack application with an ASP.NET Core backend, and VueJS frontend.",
       detailsLink: "sertave",
       githubLink: "https://github.com/danielagg/sertave-amplifications",
+      deployedAppLink: "#",
       technologies: ["ASP.NET Core", "Entity Framework Core", "VueJS", "OAuth"],
       keywords: ["ASP.NET Core", "VueJS"],
       detailedDescription:

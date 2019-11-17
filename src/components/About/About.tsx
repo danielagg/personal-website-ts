@@ -17,7 +17,7 @@ const About = () => {
             I'm a software developer from Hungary with more than three years of
             professional experience. I've worked primarily on enterprise
             applications’ backends, as well as various front ends, while
-            crafting modern web applications as hobby pet projects, such as this
+            crafting modern web applications as hobby projects, such as this
             site.
           </p>
           <p className="lg:mt-4 mt-8">
