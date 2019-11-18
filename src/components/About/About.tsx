@@ -66,12 +66,13 @@ const About = () => {
               daniel.agg@outlook.com
             </li>
           </ul>
-          <div className="lg:mt-4 mt-8 mr-4 lg:mr-0 flex lg:block justify-center items-center">
+          <div className="lg:mt-4 mt-8">
             <Button
               caption="download cv (pdf)"
               url="#"
               variant={Variant.White}
               thickness={Thickness.Widest}
+              isFullWidth={true}
             />
           </div>
         </div>

@@ -58,6 +58,7 @@ const PortfolioItemPageContainer = (props: PortfolioItemPageContainerProps) => {
             <Button
               caption="visit site"
               isNewTab={true}
+              isFullWidth={true}
               url={currentProject.deployedAppLink}
               variant={Variant.WhiteBorderOnly}
               thickness={Thickness.Widest}
@@ -68,6 +69,7 @@ const PortfolioItemPageContainer = (props: PortfolioItemPageContainerProps) => {
             <Button
               caption="view on GitHub"
               isNewTab={true}
+              isFullWidth={true}
               url={currentProject.githubLink}
               variant={Variant.White}
               thickness={Thickness.Wider}

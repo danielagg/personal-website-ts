@@ -17,6 +17,7 @@ type ButtonProp = {
   caption: string;
   url: string;
   isNewTab?: boolean;
+  isFullWidth?: boolean;
   variant?: Variant;
   thickness?: Thickness;
 };
@@ -26,6 +27,7 @@ const Button = ({
   variant = Variant.White,
   thickness = Thickness.Normal,
   isNewTab = false,
+  isFullWidth = false,
   url
 }: ButtonProp) => {
   const staticContainerStyle = "inline-block cursor-pointer";
@@ -47,13 +49,13 @@ const Button = ({
     "hover:text-black hover:bg-indigo-300 hover:border-indigo-300"
 
   const getContainerStyle = (): string => {
-    return (
-      staticContainerStyle +
-      " " +
-      getVariantSpecificStyles() +
-      " " +
-      getThicknessSpecificStyles()
-    );
+    return (isFullWidth ? "w-full text-center" : "") +
+    " " +
+    staticContainerStyle +
+    " " +
+    getVariantSpecificStyles() +
+    " " +
+    getThicknessSpecificStyles();
   };
 
   const getVariantSpecificStyles = (): string => {
