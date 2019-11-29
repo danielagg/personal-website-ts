@@ -27,8 +27,8 @@ const About = () => {
           </p>
         </div>
 
-        <div className="opacity-75 lg:w-2/5 w-full mt-8 lg:mt-0">
-          <p>
+        <div className="lg:w-2/5 w-full mt-8 lg:mt-0">
+          <p className="opacity-75">
             Please note that at the moment, I'm not actively looking for new
             professional opportunities.
           </p>
@@ -38,7 +38,7 @@ const About = () => {
                 href="https://www.linkedin.com/in/danielagg/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-purple-400 hover:text-white"
+                className="text-white hover:text-lightestBlue"
               >
                 <span className="pr-2">
                   <FontAwesomeIcon icon={faLinkedin} />
@@ -51,7 +51,7 @@ const About = () => {
                 href="https://github.com/danielagg/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-purple-400 hover:text-white"
+                className="text-white hover:text-lightestBlue"
               >
                 <span className="pr-2">
                   <FontAwesomeIcon icon={faGithub} />
@@ -59,7 +59,7 @@ const About = () => {
                 GitHub
               </a>
             </li>
-            <li className="mt-2 text-purple-400">
+            <li className="mt-2 text-white">
               <span className="pr-2">
                 <FontAwesomeIcon icon={faEnvelope} />
               </span>

@@ -39,7 +39,7 @@ const PortfolioItemPageContainer = (props: PortfolioItemPageContainerProps) => {
           {currentProject.keywords &&
             currentProject.keywords.map((item, i) => (
               <li
-                className="inline-block text-xs lg:text-base mr-4 my-2 p-2 bg-purple-600 opacity-75"
+                className="inline-block text-xs lg:text-base mr-4 my-2 p-2 bg-primaryDarkBlue opacity-25"
                 key={i}
               >
                 #{item}
@@ -79,7 +79,7 @@ const PortfolioItemPageContainer = (props: PortfolioItemPageContainerProps) => {
 
         <NavLink
           to="/"
-          className="block mt-6 lg:mt-4 text-sm lg:text-base text-purple-400 hover:text-white"
+          className="block mt-6 lg:mt-4 text-sm lg:text-base text-lightestBlue hover:text-white"
         >
           &larr; or go back to the homepage.
         </NavLink>

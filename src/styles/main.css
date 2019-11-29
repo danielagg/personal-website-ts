@@ -7,7 +7,8 @@
 @import "styles/animations.css";
 
 .bg-primary-blue-gradient {
-  background: linear-gradient(45deg, #390a58 0, #651685 50%, #5e31c9 100%);
+  /* background: linear-gradient(45deg, #390a58 0, #651685 50%, #5e31c9 100%); */
+  background: linear-gradient(45deg, #113654 0, #4d7cbf 50%, #6ba4c9 100%);
 }
 
 .font-raleway {

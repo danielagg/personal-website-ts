@@ -40,13 +40,13 @@ const Button = ({
     "bg-transparent border-2 border-white text-white";
 
   const whiteVariantHoverStyle =
-    "hover:text-black hover:bg-indigo-300 hover:border-indigo-300";
+    "hover:text-white hover:bg-primaryDarkBlue hover:border-primaryDarkBlue";
   const blueVariantHoverStyle =
-    "hover:text-black hover:bg-indigo-300 hover:border-indigo-300";
+    "hover:text-white hover:bg-primaryDarkBlue hover:border-primaryDarkBlue";
   const blueBorderOnlyVariantHoverStyle =
-    "hover:text-black hover:bg-indigo-300 hover:border-indigo-300"
+    "hover:text-white hover:bg-primaryDarkBlue hover:border-primaryDarkBlue"
   const whiteBorderOnlyVariantHoverStyle =
-    "hover:text-black hover:bg-indigo-300 hover:border-indigo-300"
+    "hover:text-white hover:bg-primaryDarkBlue hover:border-primaryDarkBlue"
 
   const getContainerStyle = (): string => {
     return (isFullWidth ? "w-full text-center" : "") +
