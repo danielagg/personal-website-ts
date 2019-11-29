@@ -35,7 +35,7 @@ const Button = ({
   const blueVariantStlye =
     "bg-primaryBlue text-white border-2 border-primaryBlue";
   const blueBorderOnlyVariantStlye =
-    "bg-white border-2 border-primaryBlue primaryBlue";
+    "bg-white border-2 border-primaryBlue text-primaryBlue";
   const whiteBorderOnlyVariantStlye =
     "bg-transparent border-2 border-white text-white";
 
