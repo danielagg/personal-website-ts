@@ -14,7 +14,7 @@ const About = () => {
         <h2 className="text-primaryDarkBlue landing-module-title">about me</h2>
       </div>
       <div className="mt-10 lg:mt-6 lg:flex block font-raleway text-primaryDarkBlue">
-        <div className="opacity-75 lg:w-3/5 w-full pr-16 leading-loose text-lg">
+        <div className="opacity-75 lg:w-3/5 w-full pr-2 lg:pr-16 leading-loose text-lg">
           <p>
             I'm a software developer from Hungary with more than three years of
             professional experience. I've worked primarily on enterprise
