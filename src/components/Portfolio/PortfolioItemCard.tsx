@@ -11,7 +11,7 @@ type PortfolioItemCardProp = {
 
 const PortfolioItemCard = ({ item }: PortfolioItemCardProp) => {
   return (
-    <div className="relative bg-white p-6 h-full w-full">
+    <div className="relative bg-white p-6 h-full w-full shadow">
       <p className="text-xl text-primaryDarkBlue uppercase font-raleway-bold wide-letter-spacing">
         {item.name}
       </p>

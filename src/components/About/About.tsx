@@ -10,8 +10,8 @@ import Button, { Variant, Thickness } from "../Shared/Button/Button";
 const About = () => {
   return (
     <div className="moveInFromBottomAnimation">
-      <h2 className="mt-12 lg:mt-24 text-white text-xl">about me</h2>
-      <div className="mt-6 lg:flex block font-raleway text-white">
+      <h2 className="mt-12 lg:mt-24 text-primaryDarkBlue text-xl">about me</h2>
+      <div className="mt-6 lg:flex block font-raleway text-primaryDarkBlue">
         <div className="opacity-75 lg:w-3/5 w-full pr-12">
           <p>
             I'm a software developer from Hungary with more than three years of
@@ -38,7 +38,7 @@ const About = () => {
                 href="https://www.linkedin.com/in/danielagg/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-white hover:text-lightestBlue"
+                className="text-primaryBlue hover:text-primaryDarkBlue"
               >
                 <span className="pr-2">
                   <FontAwesomeIcon icon={faLinkedin} />
@@ -51,7 +51,7 @@ const About = () => {
                 href="https://github.com/danielagg/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-white hover:text-lightestBlue"
+                className="text-primaryBlue hover:text-primaryDarkBlue"
               >
                 <span className="pr-2">
                   <FontAwesomeIcon icon={faGithub} />
@@ -59,7 +59,7 @@ const About = () => {
                 GitHub
               </a>
             </li>
-            <li className="mt-2 text-white">
+            <li className="mt-2 text-primaryBlue">
               <span className="pr-2">
                 <FontAwesomeIcon icon={faEnvelope} />
               </span>
@@ -70,7 +70,7 @@ const About = () => {
             <Button
               caption="download cv (pdf)"
               url="#"
-              variant={Variant.White}
+              variant={Variant.Blue}
               thickness={Thickness.Widest}
               isFullWidth={true}
             />
