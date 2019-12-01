@@ -117,7 +117,7 @@ const PortfolioItemPageContainer = (props: PortfolioItemPageContainerProps) => {
               ))}
             </ul>
           </div>
-          <div className="hidden lg:block lg:bg-white lg:p-10 text-primaryDarkBlue font-raleway-bold flex-shrink-0 lg:w-1/3">
+          <div className="hidden lg:shadow lg:block lg:bg-white lg:p-10 text-primaryDarkBlue font-raleway-bold flex-shrink-0 lg:w-1/3">
             <ul className="mt-4 mb-4">
               {currentProject.technologies.map((item, i) => (
                 <li
