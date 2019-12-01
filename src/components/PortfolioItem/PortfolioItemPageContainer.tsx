@@ -46,7 +46,7 @@ const PortfolioItemPageContainer = (props: PortfolioItemPageContainerProps) => {
               </li>
             ))}
         </ul>
-        <h1 className="lg:text-5xl text-2xl font-raleway-bold mt-4 lg:mt-6">
+        <h1 className="lg:text-6xl text-2xl font-raleway-bold mt-4 lg:mt-12">
           {currentProject.name}
         </h1>
         <p className="lg:text-xl text-lg mt-4 lg:mt-8">
@@ -60,7 +60,7 @@ const PortfolioItemPageContainer = (props: PortfolioItemPageContainerProps) => {
               isNewTab={true}
               isFullWidth={true}
               url={currentProject.deployedAppLink}
-              variant={Variant.BlueBorderOnly}
+              variant={Variant.Blue}
               thickness={Thickness.Widest}
             />
           </div>
@@ -71,7 +71,7 @@ const PortfolioItemPageContainer = (props: PortfolioItemPageContainerProps) => {
               isNewTab={true}
               isFullWidth={true}
               url={currentProject.githubLink}
-              variant={Variant.White}
+              variant={Variant.BlueBorderOnly}
               thickness={Thickness.Wider}
             />
           </div>
@@ -79,16 +79,16 @@ const PortfolioItemPageContainer = (props: PortfolioItemPageContainerProps) => {
 
         <NavLink
           to="/"
-          className="block mt-6 lg:mt-4 text-sm lg:text-base text-black underline hover:text-gray-600"
+          className="block mt-6 lg:mt-4 text-sm lg:text-base text-black text-primaryBlue hover:text-lightestBlue"
         >
           &larr; or go back to the homepage.
         </NavLink>
 
         <div className=" flex mt-8 lg:mt-16 flex-col-reverse lg:flex-row">
           <div className="pr-4 lg:pr-24">
-            <p className="text-primaryDarkBlue text-2xl mt-6 lg:mt-0">
+            <h1 className="lg:text-5xl opacity-25 text-2xl font-raleway mt-4">
               about the project
-            </p>
+            </h1>
             <div className="text-primaryDarkBlue">
               {currentProject.detailedDescription &&
                 currentProject.detailedDescription
@@ -99,7 +99,7 @@ const PortfolioItemPageContainer = (props: PortfolioItemPageContainerProps) => {
                         key={i}
                         className={`${
                           i !== 0 ? "mt-4" : "mt-2"
-                        } leading-relaxed`}
+                        } leading-relaxed text-lg leading-loose opacity-75`}
                       >
                         {item}
                       </p>
@@ -108,7 +108,7 @@ const PortfolioItemPageContainer = (props: PortfolioItemPageContainerProps) => {
             </div>
           </div>
           <div className="lg:hidden flex-grow-0 flex-shrink-0">
-            <p className="text-2xl">techs used</p>
+            <p className="opacity-25 text-2xl font-raleway mt-4">techs used</p>
             <ul className="list-disc mt-4">
               {currentProject.technologies.map((item, i) => (
                 <li className="ml-4 p-1 opacity-75" key={i}>
@@ -117,7 +117,7 @@ const PortfolioItemPageContainer = (props: PortfolioItemPageContainerProps) => {
               ))}
             </ul>
           </div>
-          <div className="hidden lg:shadow lg:block lg:bg-white lg:p-10 text-primaryDarkBlue font-raleway-bold flex-shrink-0 lg:w-1/3">
+          <div className="hidden lg:shadow lg:block lg:bg-white lg:p-10 text-primaryDarkBlue font-raleway-bold flex-shrink-0 self-start mt-24 lg:w-1/3">
             <ul className="mt-4 mb-4">
               {currentProject.technologies.map((item, i) => (
                 <li
