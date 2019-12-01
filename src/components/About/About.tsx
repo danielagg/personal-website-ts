@@ -10,9 +10,11 @@ import Button, { Variant, Thickness } from "../Shared/Button/Button";
 const About = () => {
   return (
     <div className="moveInFromBottomAnimation">
-      <h2 className="mt-12 lg:mt-24 text-primaryDarkBlue text-xl">about me</h2>
-      <div className="mt-6 lg:flex block font-raleway text-primaryDarkBlue">
-        <div className="opacity-75 lg:w-3/5 w-full pr-12">
+      <div className="mt-10">
+        <h2 className="text-primaryDarkBlue landing-module-title">about me</h2>
+      </div>
+      <div className="mt-10 lg:mt-6 lg:flex block font-raleway text-primaryDarkBlue">
+        <div className="opacity-75 lg:w-3/5 w-full pr-16 leading-loose text-lg">
           <p>
             I'm a software developer from Hungary with more than three years of
             professional experience. I've worked primarily on enterprise
@@ -27,7 +29,7 @@ const About = () => {
           </p>
         </div>
 
-        <div className="lg:w-2/5 w-full mt-8 lg:mt-0">
+        <div className="lg:w-2/5 w-full mt-8 lg:mt-0 leading-loose text-lg">
           <p className="opacity-75">
             Please note that at the moment, I'm not actively looking for new
             professional opportunities.

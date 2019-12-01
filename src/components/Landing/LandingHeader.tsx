@@ -20,20 +20,18 @@ const LandingHeader = () => {
   };
 
   return (
-    <div className="mt-4 lg:mt-16">
+    <div className="lg:py-16 py-2 lg:mt-16 mt-2 lg:mx-16">
       <div style={{ height: "2em" }}>
-        <h1 className="typed-intro moveInFromLeftAnimation relative lg:text-3xl text-lg inline-block font-raleway-black text-primaryDarkBlue uppercase wide-letter-spacing">
+        <h1 className="typed-intro moveInFromLeftAnimation relative lg:text-5xl text-xl inline-block font-raleway-black text-primaryDarkBlue uppercase wide-letter-spacing">
           Daniel Agg
         </h1>
       </div>
 
-      <hr
-        className="bg-primaryDarkBlue w-1/5 border-0 lg:mt-4 mt-2"
-        style={{ height: "2px" }}
-      />
-      <div className="text-primaryDarkBlue mt-6 opacity-75 moveInFromTopAnimation">
-        <p>I'm a full stack developer, employed by Glownexus SA.</p>
-        <p className="mt-2 lg:mt-0">
+      <div className="text-primaryDarkBlue lg:mt-16 mt-4 opacity-75 moveInFromTopAnimation">
+        <p className="lg:text-xl">
+          I'm a full stack developer, employed by Glownexus SA.
+        </p>
+        <p className="mt-2 lg:mt-0 lg:text-xl">
           I have experience with React, .NET Core, NodeJS and Azure.
         </p>
       </div>

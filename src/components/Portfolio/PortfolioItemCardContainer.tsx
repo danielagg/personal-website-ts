@@ -9,10 +9,8 @@ const PortfolioItemCardContainer = () => {
   const context = useContext<PortfolioState>(PortfolioContext);
 
   return (
-    <div>
-      <h2 className="mt-12 lg:mt-24 text-primaryDarkBlue text-xl">
-        projects I've worked on
-      </h2>
+    <div className="relative">
+      <h2 className="text-primaryDarkBlue landing-module-title">projects</h2>
       <div className="container">
         <div className="card-1">
           <PortfolioItemCard item={context.projects[0]} />

@@ -14,8 +14,8 @@ import Footer from "./components/Footer/Footer";
 
 const App = () => {
   return (
-    <div className="min-h-screen bg-primary-blue-gradient font-raleway tracking-wider">
-      <div className="p-4 lg:mx-auto lg:w-4/5">
+    <div className="p-4 min-h-screen bg-primary-blue-gradient font-raleway tracking-wider">
+      <div className="lg:mx-auto lg:w-4/5">
         <Router>
           <PortfolioContext.Provider value={InitialState}>
             <Switch>
