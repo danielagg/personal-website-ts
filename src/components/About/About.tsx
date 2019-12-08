@@ -71,7 +71,8 @@ const About = () => {
           <div className="lg:mt-4 mt-8">
             <Button
               caption="download cv (pdf)"
-              url="#"
+              url={process.env.PUBLIC_URL + "/Daniel_Agg_CV.pdf"}
+              isNewTab={true}
               variant={Variant.Blue}
               thickness={Thickness.Widest}
               isFullWidth={true}
