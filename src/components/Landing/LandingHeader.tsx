@@ -20,19 +20,17 @@ const LandingHeader = () => {
   };
 
   return (
-    <div className="lg:py-16 py-2 lg:mt-16 mt-2 lg:mx-16">
+    <div className="container py-48">
       <div style={{ height: "2em" }}>
-        <h1 className="typed-intro moveInFromLeftAnimation relative lg:text-5xl text-xl inline-block font-raleway-black text-primaryDarkBlue uppercase wide-letter-spacing">
+        <h1 className="typed-intro font-robotoMono font-light text-gray-lighter moveInFromLeftAnimation text-4xl relative inline-block">
           Daniel Agg
         </h1>
       </div>
 
-      <div className="text-primaryDarkBlue lg:mt-16 mt-4 opacity-75 moveInFromTopAnimation">
-        <p className="lg:text-xl">
-          I'm a full stack developer, employed by Glownexus SA.
-        </p>
-        <p className="mt-2 lg:mt-0 lg:text-xl">
-          I have experience with React, .NET Core, NodeJS and Azure.
+      <div className="font-light text-gray-lighter lg:mt-16 mt-4 moveInFromTopAnimation">
+        <p>
+          I'm Daniel Agg, a Hungarian full stack developer, currently employed
+          by Glownexus SA, where I work as a backend-, and devops engineer.
         </p>
       </div>
     </div>
