@@ -16,8 +16,14 @@ const PageSeparatorLine = ({ text, direction }: PageSeparatorLineProp) => {
 
   const textAlignment =
     direction === PageSeparatorDirection.Left ? "right" : "left";
+
+  const fadeInAnimation =
+    direction === PageSeparatorDirection.Left
+      ? "moveInFromLeftAnimation"
+      : "moveInFromRightAnimation";
+
   return (
-    <>
+    <div className={fadeInAnimation}>
       <div className="container" style={{ textAlign: textAlignment }}>
         <p className="uppercase text-gray font-robotoMono text-xl">{text}</p>
       </div>
@@ -29,7 +35,7 @@ const PageSeparatorLine = ({ text, direction }: PageSeparatorLineProp) => {
         }}
         className="border-0 h-px bg-gray block"
       />
-    </>
+    </div>
   );
 };
 

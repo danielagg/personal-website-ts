@@ -10,7 +10,7 @@ type PortfolioItemCardProp = {
 
 const PortfolioItemCard = ({ item }: PortfolioItemCardProp) => {
   return (
-    <div className="py-12">
+    <div className="py-12 moveInFromRightAnimation">
       <h1 className="text-primary lowercase font-robotoMono font-light text-4xl">
         {item.name}
       </h1>

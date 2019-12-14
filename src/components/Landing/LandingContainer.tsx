@@ -17,11 +17,13 @@ const LandingContainer = () => {
         direction={PageSeparatorDirection.Right}
       />
       <PortfolioItemCardContainer />
+
       <PageSeparatorLine
         text={"about me"}
         direction={PageSeparatorDirection.Left}
       />
-      {/* <About /> */}
+
+      <About />
     </>
   );
 };
