@@ -2,7 +2,7 @@ import React from "react";
 import { PortfolioItemDetails } from "../../state/PortfolioState";
 
 // Components
-import Button, { Variant, Thickness } from "../Shared/Button/Button";
+import Button, { ButtonVariant } from "../Shared/Button/Button";
 
 type PortfolioItemCardProp = {
   item: PortfolioItemDetails;

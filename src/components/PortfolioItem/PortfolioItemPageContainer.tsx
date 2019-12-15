@@ -5,7 +5,7 @@ import {
   PortfolioState,
   PortfolioItemDetails
 } from "../../state/PortfolioState";
-import Button, { Variant, Thickness } from "../Shared/Button/Button";
+import Button, { ButtonVariant } from "../Shared/Button/Button";
 import { NavLink } from "react-router-dom";
 
 interface PortfolioItemPageContainerProps extends RouteComponentProps {}
@@ -60,8 +60,7 @@ const PortfolioItemPageContainer = (props: PortfolioItemPageContainerProps) => {
               isNewTab={true}
               isFullWidth={true}
               url={currentProject.deployedAppLink}
-              variant={Variant.Blue}
-              thickness={Thickness.Widest}
+              variant={ButtonVariant.FilledPrimaryColor}
             />
           </div>
 
@@ -71,8 +70,7 @@ const PortfolioItemPageContainer = (props: PortfolioItemPageContainerProps) => {
               isNewTab={true}
               isFullWidth={true}
               url={currentProject.githubLink}
-              variant={Variant.BlueBorderOnly}
-              thickness={Thickness.Wider}
+              variant={ButtonVariant.PrimaryColorBordered}
             />
           </div>
         </div>

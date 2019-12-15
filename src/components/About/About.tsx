@@ -5,7 +5,7 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 // Components
-import Button, { Variant, Thickness } from "../Shared/Button/Button";
+import Button, { ButtonVariant } from "../Shared/Button/Button";
 
 const About = () => {
   return (
@@ -48,9 +48,7 @@ const About = () => {
             caption="download cv (pdf)"
             url={process.env.PUBLIC_URL + "/Daniel_Agg_CV.pdf"}
             isNewTab={true}
-            variant={Variant.Blue}
-            thickness={Thickness.Widest}
-            isFullWidth={true}
+            variant={ButtonVariant.LightGrayBordered}
           />
         </li>
       </ul>

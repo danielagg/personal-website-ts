@@ -1,16 +1,12 @@
 import React from "react";
 
-export enum Variant {
-  White,
-  Blue,
-  WhiteBorderOnly,
-  BlueBorderOnly
-}
-
-export enum Thickness {
-  Normal,
-  Wider,
-  Widest
+export enum ButtonVariant {
+  Plain,
+  LightGrayBordered,
+  GrayBordered,
+  DarkGrayBordered,
+  PrimaryColorBordered,
+  FilledPrimaryColor
 }
 
 type ButtonProp = {
@@ -18,72 +14,53 @@ type ButtonProp = {
   url: string;
   isNewTab?: boolean;
   isFullWidth?: boolean;
-  variant?: Variant;
-  thickness?: Thickness;
+  variant?: ButtonVariant;
 };
 
 const Button = ({
   caption,
-  variant = Variant.White,
-  thickness = Thickness.Normal,
+  variant = ButtonVariant.GrayBordered,
   isNewTab = false,
   isFullWidth = false,
   url
 }: ButtonProp) => {
-  const staticContainerStyle = "inline-block cursor-pointer";
-  const whiteVariantStlye = "bg-white text-primaryBlue border-2 border-white";
-  const blueVariantStlye =
-    "bg-primaryBlue text-white border-2 border-primaryBlue";
-  const blueBorderOnlyVariantStlye =
-    "bg-white border-2 border-primaryBlue text-primaryBlue";
-  const whiteBorderOnlyVariantStlye =
-    "bg-transparent border-2 border-white text-white";
+  const plainStyle = "";
 
-  const whiteVariantHoverStyle =
-    "hover:text-white hover:bg-primaryDarkBlue hover:border-primaryDarkBlue";
-  const blueVariantHoverStyle =
-    "hover:text-white hover:bg-primaryDarkBlue hover:border-primaryDarkBlue";
-  const blueBorderOnlyVariantHoverStyle =
-    "hover:text-white hover:bg-primaryDarkBlue hover:border-primaryDarkBlue"
-  const whiteBorderOnlyVariantHoverStyle =
-    "hover:text-white hover:bg-primaryDarkBlue hover:border-primaryDarkBlue"
+  const lightGrayBorderedStyle =
+    "inline-block cursor-pointer px-6 py-2 bg-transparent border-2 border-gray-lighter text-gray-lighter hover:text-black hover:bg-primary hover:border-primary";
+
+  const grayBorderedStyle =
+    "inline-block cursor-pointer px-6 py-2 bg-transparent border-2 border-gray text-gray hover:text-black hover:bg-primary hover:border-primary";
+
+  const darkGrayBorderedStyle =
+    "inline-block cursor-pointer px-6 py-2 bg-transparent border-2 border-gray-dark text-gray-dark hover:text-black hover:bg-primary hover:border-primary";
+
+  const primaryColorBorderedStyle =
+    "inline-block cursor-pointer px-6 py-2 bg-transparent border-2 border-primary text-primary hover:text-gray-lighter hover:bg-gray hover:border-gray-lighter";
+
+  const filledPrimaryColorStyle =
+    "inline-block cursor-pointer px-6 py-2 bg-transparent border-2 border-primary bg-primary text-black hover:text-black hover:bg-gray-lighter hover:border-gray-lighter";
 
   const getContainerStyle = (): string => {
-    return (isFullWidth ? "w-full text-center" : "") +
-    " " +
-    staticContainerStyle +
-    " " +
-    getVariantSpecificStyles() +
-    " " +
-    getThicknessSpecificStyles();
+    return (
+      (isFullWidth ? "w-full text-center " : "") + getVariantSpecificStyles()
+    );
   };
 
   const getVariantSpecificStyles = (): string => {
     switch (variant) {
-      case Variant.White:
-        return whiteVariantStlye + " " + whiteVariantHoverStyle;
-      case Variant.Blue:
-        return blueVariantStlye + " " + blueVariantHoverStyle;
-      case Variant.BlueBorderOnly:
-        return blueBorderOnlyVariantStlye + " " + blueBorderOnlyVariantHoverStyle;
-      case Variant.WhiteBorderOnly:
-        return whiteBorderOnlyVariantStlye + " " + whiteBorderOnlyVariantHoverStyle;
-      default:
-        return "";
-    }
-  };
-
-  const getThicknessSpecificStyles = (): string => {
-    switch (thickness) {
-      case Thickness.Normal:
-        return "px-4 py-2";
-
-      case Thickness.Wider:
-        return "px-8 py-2";
-
-      case Thickness.Widest:
-        return "px-12 py-2";
-
+      case ButtonVariant.Plain:
+        return plainStyle;
+      case ButtonVariant.LightGrayBordered:
+        return lightGrayBorderedStyle;
+      case ButtonVariant.GrayBordered:
+        return grayBorderedStyle;
+      case ButtonVariant.DarkGrayBordered:
+        return darkGrayBorderedStyle;
+      case ButtonVariant.PrimaryColorBordered:
+        return primaryColorBorderedStyle;
+      case ButtonVariant.FilledPrimaryColor:
+        return filledPrimaryColorStyle;
       default:
         return "";
     }
