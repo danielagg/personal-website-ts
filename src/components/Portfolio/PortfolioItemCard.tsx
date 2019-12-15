@@ -34,33 +34,10 @@ const PortfolioItemCard = ({ item }: PortfolioItemCardProp) => {
         <Button
           caption="read more &rarr;"
           url={`/projects/${item.detailsLink}`}
-          variant={ButtonVariant.Plain}
+          variant={ButtonVariant.PlainGray}
         />
       </div>
     </div>
-    // <div className="relative bg-white p-6 h-full w-full shadow">
-    //   <p className="text-xl text-primaryDarkBlue uppercase font-raleway-bold wide-letter-spacing">
-    //     {item.name}
-    //   </p>
-    //   <p className="mt-2 mb-16 text-primaryBlue">{item.description}</p>
-    //   <div className="absolute bottom-0 mb-6 flex">
-    //     <Button
-    //       caption="details"
-    //       url={`/projects/${item.detailsLink}`}
-    //       variant={Variant.Blue}
-    //       thickness={Thickness.Wider}
-    //     />
-    //     <div className="ml-2">
-    //       <Button
-    //         caption="github"
-    //         isNewTab={true}
-    //         url={item.githubLink}
-    //         variant={Variant.BlueBorderOnly}
-    //         thickness={Thickness.Wider}
-    //       />
-    //     </div>
-    //   </div>
-    // </div>
   );
 };
 

@@ -1,7 +1,8 @@
 import React from "react";
 
 export enum ButtonVariant {
-  Plain,
+  PlainGray,
+  PlainPrimary,
   LightGrayBordered,
   GrayBordered,
   DarkGrayBordered,
@@ -24,8 +25,11 @@ const Button = ({
   isFullWidth = false,
   url
 }: ButtonProp) => {
-  const plainStyle =
+  const plainGrayStyle =
     "inline-block cursor-pointer text-gray-lighter hover:text-primary";
+
+  const plainPrimaryStyle =
+    "inline-block cursor-pointer text-primary hover:text-gray-lighter";
 
   const lightGrayBorderedStyle =
     "inline-block cursor-pointer px-6 py-2 bg-transparent border-2 border-gray-lighter text-gray-lighter hover:text-black hover:bg-primary hover:border-primary";
@@ -50,8 +54,10 @@ const Button = ({
 
   const getVariantSpecificStyles = (): string => {
     switch (variant) {
-      case ButtonVariant.Plain:
-        return plainStyle;
+      case ButtonVariant.PlainGray:
+        return plainGrayStyle;
+      case ButtonVariant.PlainPrimary:
+        return plainPrimaryStyle;
       case ButtonVariant.LightGrayBordered:
         return lightGrayBorderedStyle;
       case ButtonVariant.GrayBordered:

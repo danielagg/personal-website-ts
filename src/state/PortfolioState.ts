@@ -10,7 +10,6 @@ export type PortfolioItemDetails = {
   githubLink: string;
   deployedAppLink: string;
   technologies: string[];
-  keywords?: string[];
 };
 
 export interface PortfolioState {
