@@ -6,7 +6,7 @@ export const InitialState: PortfolioState = {
       id: 1,
       name: "Company Event Managing Platform",
       homePageDescription:
-        "A React app with an ASP.NET Core backend to provide event browsing, creating and joining funcionalities. Supports identity management, user roles.\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis nisi a eros suscipit lacinia. Suspendisse eget nibh nec nulla semper semper. Proin interdum eros et nibh vestibulum, id vulputate orci pharetra. Etiam dui erat, ultricies nec porttitor ut, pretium a orci. Maecenas sed pharetra dolor.",
+        "A React app with an ASP.NET Core backend (w/ Entity Framework Core, connecting to an SQL Server) to provide event browsing, creating and joining funcionalities. Supports identity management, user roles.\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis nisi a eros suscipit lacinia. Suspendisse eget nibh nec nulla semper semper. Proin interdum eros et nibh vestibulum, id vulputate orci pharetra. Etiam dui erat, ultricies nec porttitor ut, pretium a orci. Maecenas sed pharetra dolor.",
       detailsLink: "company-event-manager",
       githubLink: "https://github.com/danielagg/event-organizer",
       deployedAppLink: "#",
