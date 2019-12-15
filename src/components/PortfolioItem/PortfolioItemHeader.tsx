@@ -8,7 +8,9 @@ const PortfolioItemHeader = ({ item }: PortfolioItemSubComponentProps) => {
       <h1 className="text-primary lowercase font-robotoMono font-light text-4xl">
         {item.name}
       </h1>
-      <p className="text-gray-lighter mt-4 lg:mt-16">{item.description}</p>
+      <p className="text-gray-lighter mt-4 lg:mt-16">
+        {item.homePageDescription}
+      </p>
 
       <div className="flex flex-col lg:flex-row mt-8 lg:mt-16">
         <div className="lg:mr-3">

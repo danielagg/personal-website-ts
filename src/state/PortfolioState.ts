@@ -4,7 +4,6 @@ export type PortfolioItemDetails = {
   id: number;
   name: string;
   homePageDescription: string;
-  description: string;
   detailedDescription?: string;
   detailsLink: string;
   githubLink: string;

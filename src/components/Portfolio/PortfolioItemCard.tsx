@@ -14,7 +14,7 @@ const PortfolioItemCard = ({ item }: PortfolioItemCardProp) => {
   return (
     <div className="py-12 moveInFromRightAnimation">
       <h1 className="text-primary lowercase font-robotoMono font-light text-4xl">
-        {item.name}
+        {`${item.id.toString().padStart(2, "0")} ${item.name}`}
       </h1>
       <a
         href={item.githubLink}

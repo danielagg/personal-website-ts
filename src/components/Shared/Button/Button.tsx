@@ -12,7 +12,8 @@ export enum ButtonVariant {
 
 type ButtonProp = {
   caption: string;
-  url: string;
+  url?: string;
+  onClick?: () => void;
   isNewTab?: boolean;
   isFullWidth?: boolean;
   variant?: ButtonVariant;
@@ -23,7 +24,8 @@ const Button = ({
   variant = ButtonVariant.GrayBordered,
   isNewTab = false,
   isFullWidth = false,
-  url
+  url,
+  onClick
 }: ButtonProp) => {
   const plainGrayStyle =
     "inline-block cursor-pointer text-gray-lighter hover:text-primary";
@@ -78,6 +80,7 @@ const Button = ({
       href={url}
       target={isNewTab ? "_blank" : "_self"}
       rel="noopener noreferrer"
+      onClick={onClick}
     >
       <div className={getContainerStyle()}>
         <p>{caption}</p>
