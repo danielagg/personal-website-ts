@@ -24,7 +24,8 @@ const Button = ({
   isFullWidth = false,
   url
 }: ButtonProp) => {
-  const plainStyle = "";
+  const plainStyle =
+    "inline-block cursor-pointer text-gray-lighter hover:text-primary";
 
   const lightGrayBorderedStyle =
     "inline-block cursor-pointer px-6 py-2 bg-transparent border-2 border-gray-lighter text-gray-lighter hover:text-black hover:bg-primary hover:border-primary";
