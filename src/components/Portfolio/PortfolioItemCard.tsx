@@ -27,8 +27,10 @@ const PortfolioItemCard = ({ item }: PortfolioItemCardProp) => {
         </span>
         view on GitHub
       </a>
-      {item.homePageDescription.split("\n").map(desc => (
-        <p className="pt-6 text-gray">{desc}</p>
+      {item.homePageDescription.split("\n").map((desc, index) => (
+        <p key={index} className="pt-6 text-gray">
+          {desc}
+        </p>
       ))}
       <div className="mt-4">
         <Button
