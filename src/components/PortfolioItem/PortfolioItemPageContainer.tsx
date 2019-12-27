@@ -39,7 +39,7 @@ const PortfolioItemPageContainer = (props: PortfolioItemPageContainerProps) => {
     } else {
       props.history.push("/404");
     }
-  }, []);
+  }, [context.projects, projectName, props.history]);
 
   if (currentProject) {
     return (

@@ -27,9 +27,9 @@ export const InitialState: PortfolioState = {
       homePageDescription:
         "An application with a VueJS frontend and NodeJS backend.",
       detailsLink: "kalodile",
-      githubLink: "https://github.com/danielagg/kalodile-ts",
+      githubLink: "https://github.com/danielagg/kalodile-ts-vue",
       deployedAppLink: "#",
-      technologies: ["ReactJS"],
+      technologies: ["VueJS", "NodeJS", "Express", "Typescript"],
       detailedDescription:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis nisi a eros suscipit lacinia. Suspendisse eget nibh nec nulla semper semper. Proin interdum eros et nibh vestibulum, id vulputate orci pharetra. Etiam dui erat, ultricies nec porttitor ut, pretium a orci. Maecenas sed pharetra dolor.\nSuspendisse varius suscipit malesuada. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean vitae arcu fermentum, finibus purus in, consectetur sem.\nPellentesque finibus vel orci quis varius. Aliquam sed metus risus. Cras auctor augue augue. Maecenas id lacus arcu. Donec lectus lacus, gravida a vulputate a, vehicula a massa. Duis commodo sapien eu nisl cursus, id porta tellus scelerisque. Aliquam ornare id sem non consequat. Suspendisse facilisis elit nec neque vestibulum convallis."
     },
