@@ -33,16 +33,18 @@ const PortfolioItemCardContainer = () => {
   };
 
   return (
-    <div className="container lg:py-16 lg:px-32 px-8">
+    <div className="container lg:py-16 lg:px-32 px-8 pt-4 pb-16">
       {itemsToDisplay.map((proj, index) => {
         return <PortfolioItemCard key={index} item={proj} />;
       })}
       {areAllProjectsLoaded === false ? (
-        <Button
-          caption="load more &rarr;"
-          onClick={onClick}
-          variant={ButtonVariant.LightGrayBordered}
-        />
+        <div className="mb-8 lg:mb-4">
+          <Button
+            caption="load more &rarr;"
+            onClick={onClick}
+            variant={ButtonVariant.LightGrayBordered}
+          />
+        </div>
       ) : (
         ""
       )}
