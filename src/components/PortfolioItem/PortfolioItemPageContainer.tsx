@@ -45,7 +45,7 @@ const PortfolioItemPageContainer = (props: PortfolioItemPageContainerProps) => {
     return (
       <>
         <PortfolioItemHeader item={currentProject} />
-        <div className="mt-2 lg:mt-24">
+        <div className="mt-12 lg:mt-24">
           <PageSeparatorLine
             text={"what is it?"}
             direction={PageSeparatorDirection.Right}
@@ -53,7 +53,7 @@ const PortfolioItemPageContainer = (props: PortfolioItemPageContainerProps) => {
         </div>
 
         <PortfolioItemDescription item={currentProject} />
-        <div className="mt-2 lg:mt-24">
+        <div className="mt-12 lg:mt-24">
           <PageSeparatorLine
             text={"techs used"}
             direction={PageSeparatorDirection.Left}

@@ -34,9 +34,9 @@ const PageSeparatorLine = ({ text, direction }: PageSeparatorLineProp) => {
         style={{
           float: floatDirection
         }}
-        className="w-full lg:w-3/4 lg:-mt-4 lg:mb-0 mt-8 mb-4 border-0 h-px bg-gray block"
+        className="w-full lg:w-3/4 lg:-mt-4 lg:mb-0 mt-8 mb-4 border-0 h-px bg-gray lg:block hidden"
       />
-      <p className="block lg:hidden text-center uppercase text-gray font-robotoMono text-xl">
+      <p className="block lg:hidden pl-8 uppercase text-gray font-robotoMono text-xl">
         {text}
       </p>
     </div>
