@@ -9,8 +9,8 @@ import Button, { ButtonVariant } from "../Shared/Button/Button";
 
 const About = () => {
   return (
-    <div className="container lg:py-48 lg:px-32 text-gray flex">
-      <ul className="pt-6 pr-12 flex-none text-gray-lighter flex-grow">
+    <div className="container lg:py-16 lg:px-32 text-gray lg:flex">
+      <ul className="pt-6 px-8 lg:px-0 lg:pr-12 lg:flex-none lg:flex-grow text-gray-lighter">
         <li>
           <a
             href="https://www.linkedin.com/in/danielagg/"
@@ -53,7 +53,7 @@ const About = () => {
         </li>
       </ul>
 
-      <div className="pl-32">
+      <div className="px-8 pt-8 lg:pl-32 lg:pt-0">
         <p className="pt-6">
           I'm a software developer from Hungary with more than three years of
           professional experience. I've worked primarily on enterprise

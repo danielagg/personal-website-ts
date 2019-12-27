@@ -19,6 +19,14 @@ module.exports = {
           default: "#707070",
           dark: "#3b3b3b"
         }
+      },
+      margin: {
+        "18": "4.5rem",
+        "-18": "-4.5rem"
+      },
+      padding: {
+        "18": "4.5rem",
+        "-18": "-4.5rem"
       }
     }
   },

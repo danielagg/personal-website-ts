@@ -13,14 +13,14 @@ type PortfolioItemCardProp = {
 const PortfolioItemCard = ({ item }: PortfolioItemCardProp) => {
   return (
     <div className="py-12 moveInFromRightAnimation">
-      <h1 className="text-primary lowercase font-robotoMono font-light text-4xl">
+      <h1 className="text-primary lowercase font-robotoMono font-light text-3xl lg:text-4xl">
         {`${item.id.toString().padStart(2, "0")} ${item.name}`}
       </h1>
       <a
         href={item.githubLink}
         target="_blank"
         rel="noopener noreferrer"
-        className="text-primary hover:text-gray-lighter mr-4"
+        className="block text-primary hover:text-gray-lighter mr-4 mt-2 lg:mt-0"
       >
         <span className="pr-2">
           <FontAwesomeIcon icon={faGithub} />

@@ -4,7 +4,7 @@ import { PortfolioItemSubComponentProps } from "./PortfolioItemPageContainer";
 
 const PortfolioItemHeader = ({ item }: PortfolioItemSubComponentProps) => {
   return (
-    <div className="container lg:py-48 lg:px-32">
+    <div className="container px-8 py-8 lg:pt-24 lg:px-32">
       <h1 className="moveInFromLeftAnimation text-primary lowercase font-robotoMono font-light text-4xl">
         {item.name}
       </h1>
