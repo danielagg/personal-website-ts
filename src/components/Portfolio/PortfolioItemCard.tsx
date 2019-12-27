@@ -20,7 +20,7 @@ const PortfolioItemCard = ({ item }: PortfolioItemCardProp) => {
         href={item.githubLink}
         target="_blank"
         rel="noopener noreferrer"
-        className="block text-primary hover:text-gray-lighter mr-4 mt-2 lg:mt-0"
+        className="block text-xs lg:text-base text-primary hover:text-gray-lighter mr-4 mt-2 lg:mt-0"
       >
         <span className="pr-2">
           <FontAwesomeIcon icon={faGithub} />
