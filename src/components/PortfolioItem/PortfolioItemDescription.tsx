@@ -3,7 +3,7 @@ import { PortfolioItemSubComponentProps } from "./PortfolioItemPageContainer";
 
 const PortfolioItemDescription = ({ item }: PortfolioItemSubComponentProps) => {
   return (
-    <div className="moveInFromRightAnimation container pt-16 pb-24">
+    <div className="moveInFromRightAnimation container lg:py-48 lg:px-32">
       <div className="text-gray">
         {item.detailedDescription &&
           item.detailedDescription.split("\n").map((line, index) => {

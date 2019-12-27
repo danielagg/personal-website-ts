@@ -9,7 +9,7 @@ import Button, { ButtonVariant } from "../Shared/Button/Button";
 
 const About = () => {
   return (
-    <div className="container text-gray flex pt-16">
+    <div className="container lg:py-48 lg:px-32 text-gray flex">
       <ul className="pt-6 pr-12 flex-none text-gray-lighter flex-grow">
         <li>
           <a

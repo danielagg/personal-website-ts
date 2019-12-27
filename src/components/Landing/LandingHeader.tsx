@@ -20,9 +20,9 @@ const LandingHeader = () => {
   };
 
   return (
-    <div className="container py-48">
+    <div className="container p-8 lg:py-48 lg:px-32">
       <div style={{ height: "2em" }}>
-        <h1 className="typed-intro font-robotoMono font-light text-gray-lighter moveInFromLeftAnimation text-4xl relative inline-block">
+        <h1 className="typed-intro font-robotoMono font-light text-gray-lighter moveInFromLeftAnimation text-lg lg:text-4xl relative inline-block">
           Daniel Agg
         </h1>
       </div>

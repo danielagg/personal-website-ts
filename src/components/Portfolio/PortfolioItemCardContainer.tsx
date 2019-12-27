@@ -33,7 +33,7 @@ const PortfolioItemCardContainer = () => {
   };
 
   return (
-    <div className="container py-16">
+    <div className="container lg:py-16 lg:px-32">
       {itemsToDisplay.map((proj, index) => {
         return <PortfolioItemCard key={index} item={proj} />;
       })}

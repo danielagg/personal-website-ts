@@ -24,17 +24,21 @@ const PageSeparatorLine = ({ text, direction }: PageSeparatorLineProp) => {
 
   return (
     <div className={fadeInAnimation}>
-      <div className="container" style={{ textAlign: textAlignment }}>
+      <div
+        className="container lg:px-32 lg:block hidden"
+        style={{ textAlign: textAlignment }}
+      >
         <p className="uppercase text-gray font-robotoMono text-xl">{text}</p>
       </div>
       <hr
         style={{
-          width: "75%",
-          float: floatDirection,
-          marginTop: "-1rem"
+          float: floatDirection
         }}
-        className="border-0 h-px bg-gray block"
+        className="w-full lg:w-3/4 lg:-mt-4 lg:mb-0 mt-8 mb-4 border-0 h-px bg-gray block"
       />
+      <p className="block lg:hidden text-center uppercase text-gray font-robotoMono text-xl">
+        {text}
+      </p>
     </div>
   );
 };

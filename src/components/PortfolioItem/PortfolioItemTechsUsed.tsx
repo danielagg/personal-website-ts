@@ -3,7 +3,7 @@ import { PortfolioItemSubComponentProps } from "./PortfolioItemPageContainer";
 
 const PortfolioItemTechsUsed = ({ item }: PortfolioItemSubComponentProps) => {
   return (
-    <div className="container pt-16 pb-2 flex">
+    <div className="container lg:py-48 lg:px-32 flex">
       <ul className="pt-6 pr-12 flex-none text-gray-lighter flex-grow">
         {item.technologies.map((tech, index) => {
           return (

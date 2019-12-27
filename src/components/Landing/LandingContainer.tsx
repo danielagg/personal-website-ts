@@ -23,7 +23,7 @@ const LandingContainer = () => {
         direction={PageSeparatorDirection.Left}
       />
 
-      <About />
+      {/* <About /> */}
     </>
   );
 };
