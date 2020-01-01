@@ -8,7 +8,7 @@ const PortfolioItemHeader = ({ item }: PortfolioItemSubComponentProps) => {
       <h1 className="moveInFromLeftAnimation text-primary lowercase font-robotoMono font-light text-4xl">
         {item.name}
       </h1>
-      <p className="moveInFromTopAnimation text-gray-lighter mt-4 lg:mt-16">
+      <p className="moveInFromTopAnimation leading-loose text-gray-lighter mt-4 lg:mt-16">
         {item.homePageDescription}
       </p>
 

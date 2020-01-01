@@ -14,7 +14,7 @@ import Footer from "./components/Footer/Footer";
 
 const App = () => {
   return (
-    <div className="bg-black leading-loose">
+    <div className="bg-black leading-relaxed">
       <Router>
         <PortfolioContext.Provider value={InitialState}>
           <Switch>
