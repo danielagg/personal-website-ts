@@ -23,6 +23,18 @@ export const InitialState: PortfolioState = {
     },
     {
       id: 2,
+      name: "Abstract Museum",
+      homePageDescription:
+        "A web app for a made-up museum, using a React frontend with a NodeJS backend, using GraphQL. The goal of this project was to challenge myself to build a unique, abstract but easy-to-use user interface (break out of the typical Material-esque designs).",
+      detailsLink: "museum",
+      githubLink: "#",
+      deployedAppLink: "#",
+      technologies: ["React", "GraphQL", "NodeJS", "Express", "Typescript"],
+      detailedDescription:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis nisi a eros suscipit lacinia. Suspendisse eget nibh nec nulla semper semper. Proin interdum eros et nibh vestibulum, id vulputate orci pharetra. Etiam dui erat, ultricies nec porttitor ut, pretium a orci. Maecenas sed pharetra dolor.\nSuspendisse varius suscipit malesuada. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean vitae arcu fermentum, finibus purus in, consectetur sem.\nPellentesque finibus vel orci quis varius. Aliquam sed metus risus. Cras auctor augue augue. Maecenas id lacus arcu. Donec lectus lacus, gravida a vulputate a, vehicula a massa. Duis commodo sapien eu nisl cursus, id porta tellus scelerisque. Aliquam ornare id sem non consequat. Suspendisse facilisis elit nec neque vestibulum convallis."
+    },
+    {
+      id: 3,
       name: "Kalodile - Music Gear Rental Service",
       homePageDescription:
         "An application with a VueJS frontend and NodeJS backend.",
@@ -30,18 +42,6 @@ export const InitialState: PortfolioState = {
       githubLink: "https://github.com/danielagg/kalodile-ts-vue",
       deployedAppLink: "#",
       technologies: ["VueJS", "NodeJS", "Express", "Typescript"],
-      detailedDescription:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis nisi a eros suscipit lacinia. Suspendisse eget nibh nec nulla semper semper. Proin interdum eros et nibh vestibulum, id vulputate orci pharetra. Etiam dui erat, ultricies nec porttitor ut, pretium a orci. Maecenas sed pharetra dolor.\nSuspendisse varius suscipit malesuada. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean vitae arcu fermentum, finibus purus in, consectetur sem.\nPellentesque finibus vel orci quis varius. Aliquam sed metus risus. Cras auctor augue augue. Maecenas id lacus arcu. Donec lectus lacus, gravida a vulputate a, vehicula a massa. Duis commodo sapien eu nisl cursus, id porta tellus scelerisque. Aliquam ornare id sem non consequat. Suspendisse facilisis elit nec neque vestibulum convallis."
-    },
-    {
-      id: 3,
-      name: "Abstract Museum",
-      homePageDescription:
-        "A web app for a made-up museum, using a React frontend with a NodeJS backend, using GraphQL.",
-      detailsLink: "museum",
-      githubLink: "#",
-      deployedAppLink: "#",
-      technologies: ["React", "GraphQL", "NodeJS", "Express", "Typescript"],
       detailedDescription:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis nisi a eros suscipit lacinia. Suspendisse eget nibh nec nulla semper semper. Proin interdum eros et nibh vestibulum, id vulputate orci pharetra. Etiam dui erat, ultricies nec porttitor ut, pretium a orci. Maecenas sed pharetra dolor.\nSuspendisse varius suscipit malesuada. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean vitae arcu fermentum, finibus purus in, consectetur sem.\nPellentesque finibus vel orci quis varius. Aliquam sed metus risus. Cras auctor augue augue. Maecenas id lacus arcu. Donec lectus lacus, gravida a vulputate a, vehicula a massa. Duis commodo sapien eu nisl cursus, id porta tellus scelerisque. Aliquam ornare id sem non consequat. Suspendisse facilisis elit nec neque vestibulum convallis."
     },
