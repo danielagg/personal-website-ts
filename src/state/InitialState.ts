@@ -6,16 +6,16 @@ export const InitialState: PortfolioState = {
       id: 1,
       name: "Company Event Managing Platform",
       homePageDescription:
-        "A React app with an ASP.NET Core backend (w/ Entity Framework Core, connecting to an SQL Server) to provide event browsing, creating and joining funcionalities. Supports identity management, user roles.\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis nisi a eros suscipit lacinia. Suspendisse eget nibh nec nulla semper semper. Proin interdum eros et nibh vestibulum, id vulputate orci pharetra. Etiam dui erat, ultricies nec porttitor ut, pretium a orci. Maecenas sed pharetra dolor.",
+        "A React app with an ASP.NET Core backend (w/ Entity Framework Core, GraphQL) to provide event browsing, creating and joining funcionalities. Supports identity management, user roles.\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis nisi a eros suscipit lacinia. Suspendisse eget nibh nec nulla semper semper. Proin interdum eros et nibh vestibulum, id vulputate orci pharetra. Etiam dui erat, ultricies nec porttitor ut, pretium a orci. Maecenas sed pharetra dolor.",
       detailsLink: "company-event-manager",
       githubLink: "https://github.com/danielagg/event-organizer",
       deployedAppLink: "#",
       technologies: [
         "ReactJS",
         "Redux (w/ Saga)",
-        "NodeJS",
-        "MongoDB",
-        "Tailwind CSS",
+        "ASP.NET Core",
+        "GraphQL",
+        "Entity Framework Core",
         "OAuth"
       ],
       detailedDescription:
@@ -35,13 +35,13 @@ export const InitialState: PortfolioState = {
     },
     {
       id: 3,
-      name: "Sertave - Furniture Store",
+      name: "Abstract Museum",
       homePageDescription:
-        "An app created in the MERN framework to provide event browsing, creating and joining funcionalities. Supports identity management, user roles.\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis nisi a eros suscipit lacinia. Suspendisse eget nibh nec nulla semper semper. Proin interdum eros et nibh vestibulum, id vulputate orci pharetra. Etiam dui erat, ultricies nec porttitor ut, pretium a orci. Maecenas sed pharetra dolor.",
-      detailsLink: "sertave",
-      githubLink: "https://github.com/danielagg/sertave-amplifications",
+        "A web app for a made-up museum, using a React frontend with a NodeJS backend, using GraphQL.",
+      detailsLink: "museum",
+      githubLink: "#",
       deployedAppLink: "#",
-      technologies: ["ASP.NET Core", "Entity Framework Core", "VueJS", "OAuth"],
+      technologies: ["React", "GraphQL", "NodeJS", "Express", "Typescript"],
       detailedDescription:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis nisi a eros suscipit lacinia. Suspendisse eget nibh nec nulla semper semper. Proin interdum eros et nibh vestibulum, id vulputate orci pharetra. Etiam dui erat, ultricies nec porttitor ut, pretium a orci. Maecenas sed pharetra dolor.\nSuspendisse varius suscipit malesuada. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean vitae arcu fermentum, finibus purus in, consectetur sem.\nPellentesque finibus vel orci quis varius. Aliquam sed metus risus. Cras auctor augue augue. Maecenas id lacus arcu. Donec lectus lacus, gravida a vulputate a, vehicula a massa. Duis commodo sapien eu nisl cursus, id porta tellus scelerisque. Aliquam ornare id sem non consequat. Suspendisse facilisis elit nec neque vestibulum convallis."
     },
