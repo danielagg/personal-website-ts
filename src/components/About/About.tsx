@@ -16,7 +16,7 @@ const About = () => {
             href="https://www.linkedin.com/in/danielagg/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-primaryBlue hover:text-primaryDarkBlue"
+            className="text-primaryBlue hover:text-primary"
           >
             <span className="pr-2">
               <FontAwesomeIcon icon={faLinkedin} />
@@ -29,7 +29,7 @@ const About = () => {
             href="https://github.com/danielagg/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-primaryBlue hover:text-primaryDarkBlue"
+            className="text-primaryBlue hover:text-primary"
           >
             <span className="pr-2">
               <FontAwesomeIcon icon={faGithub} />
@@ -55,7 +55,7 @@ const About = () => {
 
       <div className="px-8 pt-8 lg:pl-32 lg:pt-0">
         <p className="pt-6">
-          I'm a software developer from Hungary with more than three years of
+          I'm a software developer from Hungary with four years of
           professional experience. I've worked primarily on enterprise
           applications’ backends, as well as various front ends, while crafting
           modern web applications as hobby projects, such as this site.

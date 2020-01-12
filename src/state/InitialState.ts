@@ -6,7 +6,7 @@ export const InitialState: PortfolioState = {
       id: 1,
       name: "Company Event Managing Platform",
       homePageDescription:
-        "A React app with an ASP.NET Core backend (w/ Entity Framework Core, GraphQL) to provide event browsing, creating and joining funcionalities. Supports identity management, user roles.\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis nisi a eros suscipit lacinia. Suspendisse eget nibh nec nulla semper semper. Proin interdum eros et nibh vestibulum, id vulputate orci pharetra. Etiam dui erat, ultricies nec porttitor ut, pretium a orci. Maecenas sed pharetra dolor.",
+        "A React app with an ASP.NET Core backend (w/ Entity Framework Core, GraphQL) to provide event browsing, creating and joining funcionalities for a made-up company. Supports identity management, user roles.",
       detailsLink: "company-event-manager",
       githubLink: "https://github.com/danielagg/event-organizer",
       deployedAppLink: "#",
@@ -25,11 +25,11 @@ export const InitialState: PortfolioState = {
       id: 2,
       name: "Abstract Museum",
       homePageDescription:
-        "A web app for a made-up museum, using a React frontend with a NodeJS/Hapi backend. The goal of this project was to challenge myself to build a unique, abstract but easy-to-use user interface (break out of the typical Material-esque designs).",
+        "A web app for a made-up museum, using a React frontend with a NodeJS/Hapi (OAuth with Google + Facebook) backend. The goal of this project was to challenge myself to build a unique, abstract but easy-to-use user interface (break out of the typical Material-esque designs).",
       detailsLink: "museum",
       githubLink: "#",
       deployedAppLink: "#",
-      technologies: ["React", "GraphQL", "NodeJS", "Express", "Typescript"],
+      technologies: ["React", "GraphQL", "NodeJS", "Express", "Typescript", "OAuth"],
       detailedDescription:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis nisi a eros suscipit lacinia. Suspendisse eget nibh nec nulla semper semper. Proin interdum eros et nibh vestibulum, id vulputate orci pharetra. Etiam dui erat, ultricies nec porttitor ut, pretium a orci. Maecenas sed pharetra dolor.\nSuspendisse varius suscipit malesuada. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean vitae arcu fermentum, finibus purus in, consectetur sem.\nPellentesque finibus vel orci quis varius. Aliquam sed metus risus. Cras auctor augue augue. Maecenas id lacus arcu. Donec lectus lacus, gravida a vulputate a, vehicula a massa. Duis commodo sapien eu nisl cursus, id porta tellus scelerisque. Aliquam ornare id sem non consequat. Suspendisse facilisis elit nec neque vestibulum convallis."
     },
@@ -37,7 +37,7 @@ export const InitialState: PortfolioState = {
       id: 3,
       name: "Kalodile - Music Gear Rental Service",
       homePageDescription:
-        "An application with a VueJS frontend and NodeJS backend.",
+        "An application with a VueJS frontend and NodeJS backend, where users can offer their musical equipment up for rent.",
       detailsLink: "kalodile",
       githubLink: "https://github.com/danielagg/kalodile-ts-vue",
       deployedAppLink: "#",
