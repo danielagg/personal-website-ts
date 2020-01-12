@@ -25,7 +25,7 @@ export const InitialState: PortfolioState = {
       id: 2,
       name: "Abstract Museum",
       homePageDescription:
-        "A web app for a made-up museum, using a React frontend with a NodeJS backend, using GraphQL. The goal of this project was to challenge myself to build a unique, abstract but easy-to-use user interface (break out of the typical Material-esque designs).",
+        "A web app for a made-up museum, using a React frontend with a NodeJS/Hapi backend. The goal of this project was to challenge myself to build a unique, abstract but easy-to-use user interface (break out of the typical Material-esque designs).",
       detailsLink: "museum",
       githubLink: "#",
       deployedAppLink: "#",
