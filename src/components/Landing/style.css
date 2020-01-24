@@ -1,11 +1,11 @@
 .typed-intro::after {
   content: "";
   position: absolute;
-  top: 0;
-  right: -0.7rem;
-  width: 8px;
-  height: 100%;
-  background: #cecece;
+  top: 10%;
+  right: -2rem;
+  width: 15px;
+  height: 75%;
+  background: white;
   animation: pulse 1s infinite;
 }
 

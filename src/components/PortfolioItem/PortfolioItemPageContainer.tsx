@@ -6,9 +6,6 @@ import {
   PortfolioItemDetails
 } from "../../state/PortfolioState";
 
-import PageSeparatorLine, {
-  PageSeparatorDirection
-} from "../Shared/PageSeparator/PageSeparatorLine";
 import PortfolioItemHeader from "./PortfolioItemHeader";
 import PortfolioItemDescription from "./PortfolioItemDescription";
 import PortfolioItemTechsUsed from "./PortfolioItemTechsUsed";
@@ -45,21 +42,7 @@ const PortfolioItemPageContainer = (props: PortfolioItemPageContainerProps) => {
     return (
       <>
         <PortfolioItemHeader item={currentProject} />
-        <div className="mt-12 lg:mt-24">
-          <PageSeparatorLine
-            text={"what is it?"}
-            direction={PageSeparatorDirection.Right}
-          />
-        </div>
-
         <PortfolioItemDescription item={currentProject} />
-        <div className="mt-12 lg:mt-24">
-          <PageSeparatorLine
-            text={"techs used"}
-            direction={PageSeparatorDirection.Left}
-          />
-        </div>
-
         <PortfolioItemTechsUsed item={currentProject} />
       </>
     );

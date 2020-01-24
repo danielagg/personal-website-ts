@@ -13,25 +13,28 @@ const LandingHeader = () => {
     if (textElement !== null) {
       new TypeWriter(
         textElement,
-        ["Hi, I'm Dan.", "I'm a full-stack dev."],
+        ["Daniel Agg.", "...just Dan."],
         1500
       );
     }
   };
 
   return (
-    <div className="container px-8 py-24 lg:py-48 lg:px-32">
-      <div style={{ height: "2em" }}>
-        <h1 className="typed-intro font-robotoMono font-normal lg:font-light text-gray-lighter moveInFromLeftAnimation text-xl lg:text-4xl relative inline-block">
-          Daniel Agg
-        </h1>
-      </div>
+    <div className="bg-primary p-4 flex" style={{ minHeight: "100vh" }}>
 
-      <div className="font-light text-gray-lighter lg:mt-16 mt-8 moveInFromTopAnimation">
-        <p>
-          I'm Daniel Agg, a Hungarian full stack developer, currently employed
-          by Glownexus SA, where I work as a backend-, and devops engineer.
+      <div className="mx-auto self-center" style={{ maxWidth: "50vw" }}>
+        <div style={{minHeight: "12rem"}}>
+          <h1 className="typed-intro relative inline-block text-white text-7xl font-black tracking-tighter">Hello</h1>
+        </div>
+
+        <p className="text-white w-5/6 font-thin text-lg">
+          Hello! I'm a Hungarian <span className="font-bold">full stack developer</span>, currently employed by Glownexus SA, where I take care of various tasks within my team - backend, frontend, devops, it's all depending on the day.
         </p>
+
+        <ul className="mt-12 flex text-white font-thin text-2xl">
+          <li>my projects</li>
+          <li className="ml-6">about me</li>
+        </ul>
       </div>
     </div>
   );

@@ -4,15 +4,12 @@ import React from "react";
 import LandingHeader from "./LandingHeader";
 import PortfolioItemCardContainer from "../Portfolio/PortfolioItemCardContainer";
 import About from "../About/About";
-import PageSeparatorLine, {
-  PageSeparatorDirection
-} from "../Shared/PageSeparator/PageSeparatorLine";
 
 const LandingContainer = () => {
   return (
     <>
       <LandingHeader />
-      <PageSeparatorLine
+      {/* <PageSeparatorLine
         text={"projects"}
         direction={PageSeparatorDirection.Right}
       />
@@ -23,7 +20,7 @@ const LandingContainer = () => {
         direction={PageSeparatorDirection.Left}
       />
 
-      <About />
+      <About /> */}
     </>
   );
 };

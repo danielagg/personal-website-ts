@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 /* Custom styling */
-@import url("https://fonts.googleapis.com/css?family=Farro:300,400,700|Roboto+Mono:300,400&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Yantramanav:300,400,700,900&display=swap');
 @import "styles/animations.css";
 
 ::selection {
