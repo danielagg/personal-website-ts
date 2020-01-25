@@ -7,10 +7,9 @@ import { PortfolioContext } from "./state/PortfolioState";
 import { InitialState } from "./state/InitialState";
 
 // Components
-import LandingContainer from "./components/Landing/LandingContainer";
-import PortfolioItemPageContainer from "./components/PortfolioItem/PortfolioItemPageContainer";
-import NotFoundPage from "./components/NotFound/NotFoundPage";
-import Footer from "./components/Footer/Footer";
+import Landing from "./components/Landing/landing.component";
+import NotFoundPage from "./components/NotFound/notfound.component";
+import Footer from "./components/Footer/footer.component";
 
 const App = () => {
   return (
@@ -18,11 +17,7 @@ const App = () => {
       <Router>
         <PortfolioContext.Provider value={InitialState}>
           <Switch>
-            <Route exact path="/" component={LandingContainer} />
-            <Route
-              path="/projects/:projectName"
-              component={PortfolioItemPageContainer}
-            />
+            <Route exact path="/" component={Landing} />
             <Route exact path="/404" component={NotFoundPage} />
             <Route component={NotFoundPage} />
           </Switch>

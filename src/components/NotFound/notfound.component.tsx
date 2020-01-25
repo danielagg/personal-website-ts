@@ -1,8 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-// Components
-import Button, { ButtonVariant } from "../Shared/Button/Button";
 
 const NotFoundPage = () => {
   return (
@@ -12,11 +10,7 @@ const NotFoundPage = () => {
       </h1>
       <p className="text-gray text-xl mt-2">This page does not exist.</p>
       <NavLink to="/" className="mt-8">
-        <Button
-          caption="&larr; go back"
-          url="#"
-          variant={ButtonVariant.GrayBordered}
-        />
+        <p>Back</p>
       </NavLink>
     </div>
   );
