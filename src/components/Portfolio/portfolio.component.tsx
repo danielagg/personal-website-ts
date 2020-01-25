@@ -1,4 +1,6 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import {
   PortfolioItemDetails,
   PortfolioItemVariant
@@ -38,7 +40,12 @@ const PortfolioItem = ({ project }: PortfolioItemCardProp) => {
             style={{ color: `${getVariantColor()}` }}
           >
             <li>View App</li>
-            <li className={"ml-6"}>View Source</li>
+            <li className={"ml-12"}>
+              <span className="pr-2">
+                <FontAwesomeIcon icon={faGithub} />
+              </span>
+              View Source
+            </li>
           </ul>
 
           <div className={"w-4/6 mt-16 flex text-gray space-between"}>

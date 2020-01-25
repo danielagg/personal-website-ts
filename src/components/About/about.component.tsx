@@ -1,8 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
-// import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope, faFile } from "@fortawesome/free-solid-svg-icons";
 
 const About = () => {
   const staticClassesOfShapes = "bg-black w-full absolute";
@@ -30,8 +29,9 @@ const About = () => {
             </p>
             <p className="pt-12">
               I'm mostly familiar with technologies such as React (inc. redux,
-              jest), ASP.Net Core (inc. Entity Framework Core) and Microsoft
-              Azure. For more detailed information, please refer to my CV.
+              jest), VueJS, ASP.Net Core (inc. Entity Framework Core) and
+              Microsoft Azure. For more detailed information, please refer to my
+              CV.
             </p>
           </div>
         </div>
@@ -42,14 +42,20 @@ const About = () => {
           >
             Who?
           </h1>
-          <ul className={"text-white text-2xl mt-12"}>
+          <ul className={"text-white text-xl mt-12"}>
             <li>
               <span className="pr-2">
                 <FontAwesomeIcon icon={faLinkedin} />
               </span>
               LinkedIn
             </li>
-            <li className={"mt-4"}>
+            <li className={"mt-2"}>
+              <span className="pr-2">
+                <FontAwesomeIcon icon={faFile} />
+              </span>
+              Resumé
+            </li>
+            <li className={"mt-2"}>
               <span className="pr-2">
                 <FontAwesomeIcon icon={faEnvelope} />
               </span>
