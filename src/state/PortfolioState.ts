@@ -2,14 +2,20 @@ import { createContext } from "react";
 
 export type PortfolioItemDetails = {
   id: number;
+  variant: PortfolioItemVariant;
   name: string;
-  homePageDescription: string;
-  detailedDescription?: string;
-  detailsLink: string;
+  shortDescription: string;
+  longDescription1: string;
+  longDescription2: string;
+  appLink: string;
   githubLink: string;
-  deployedAppLink: string;
-  technologies: string[];
 };
+
+export enum PortfolioItemVariant {
+  Purple,
+  Orange,
+  Green
+}
 
 export interface PortfolioState {
   projects: PortfolioItemDetails[];

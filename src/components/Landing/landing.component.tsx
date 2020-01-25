@@ -28,7 +28,7 @@ const Landing = () => {
       <div className="h-screen flex ">
         <div className="mx-auto self-center" style={{ maxWidth: "50vw" }}>
           <div style={{ minHeight: "12rem" }}>
-            <h1 className="typed-intro relative inline-block text-white text-7xl font-black tracking-tighter">
+            <h1 className="typed-intro relative inline-block text-white text-8xl font-black tracking-tighter">
               Hello
             </h1>
           </div>

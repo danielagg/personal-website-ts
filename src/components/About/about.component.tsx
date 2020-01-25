@@ -1,14 +1,14 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
+// import { faGithub } from "@fortawesome/free-brands-svg-icons";
+// import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 // Components
 
 const About = () => {
   return (
-    <p>Test</p>
+    <p>About</p>
     // <div className="container lg:py-16 lg:px-32 py-12 text-gray lg:flex">
     //   <ul className="pt-6 px-8 lg:px-0 lg:pr-12 lg:flex-none lg:flex-grow text-gray-lighter">
     //     <li>

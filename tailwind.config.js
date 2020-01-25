@@ -3,7 +3,7 @@ module.exports = {
     fontFamily: {
       display: ['"Farro"', "Helvetica", "Arial", "sans-serif"],
       body: ['"Farro"', "Helvetica", "Arial", "sans-serif"],
-      yantramanav: ['Yantramanav', 'sans-serif']
+      yantramanav: ["Yantramanav", "sans-serif"]
     },
     container: {
       center: true,
@@ -31,7 +31,11 @@ module.exports = {
         "-18": "-4.5rem"
       },
       fontSize: {
-        '7xl': '9rem'
+        "7xl": "8rem",
+        "8xl": "9rem"
+      },
+      borderWidth: {
+        "9": "35px"
       }
     }
   },
