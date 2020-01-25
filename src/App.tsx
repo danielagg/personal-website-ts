@@ -8,7 +8,6 @@ import { InitialState } from "./state/InitialState";
 
 // Components
 import NotFoundPage from "./components/NotFound/notfound.component";
-import Footer from "./components/Footer/footer.component";
 import LandingContainer from "./components/Landing/landing.container";
 
 const App = () => {
@@ -23,7 +22,6 @@ const App = () => {
           </Switch>
         </PortfolioContext.Provider>
       </Router>
-      <Footer />
     </div>
   );
 };
