@@ -28,19 +28,25 @@ const PortfolioItem = ({ project }: PortfolioItemCardProp) => {
   return (
     <div className={"relative"}>
       <div
-        className={"border-l-9 min-h-screen"}
+        className={"border-t-9 lg:border-t-0 lg:border-l-9 lg:min-h-screen"}
         style={{ borderColor: `${getVariantColor()}` }}
       >
-        <div className={"container py-24 px-12"}>
-          <h1 className={"text-white text-7xl font-black tracking-tighter"}>
+        <div className={"container py-6 lg:py-24 px-6 lg:px-12"}>
+          <h1
+            className={
+              "text-white text-6xl lg:text-7xl font-black tracking-tighter"
+            }
+          >
             {project.name}
           </h1>
-          <h2 className={"text-white text-2xl"}>{project.shortDescription}</h2>
+          <h2 className={"text-white text-xl lg:text-2xl"}>
+            {project.shortDescription}
+          </h2>
           <ul
-            className={"flex mt-2 text-xl"}
+            className={"lg:flex mt-2 text-xl"}
             style={{ color: `${getVariantColor()}` }}
           >
-            <li className={`portfolio-link-${project.variant}`}>
+            <li className={`mt-4 lg:mt-0 portfolio-link-${project.variant}`}>
               <a
                 href={project.appLink}
                 target="_blank"
@@ -49,7 +55,9 @@ const PortfolioItem = ({ project }: PortfolioItemCardProp) => {
                 View App
               </a>
             </li>
-            <li className={`ml-12 portfolio-link-${project.variant}`}>
+            <li
+              className={`lg:ml-12 mt-4 lg:mt-0 portfolio-link-${project.variant}`}
+            >
               <a
                 href={project.githubLink}
                 target="_blank"
@@ -63,9 +71,15 @@ const PortfolioItem = ({ project }: PortfolioItemCardProp) => {
             </li>
           </ul>
 
-          <div className={"w-4/6 mt-16 flex text-gray space-between"}>
+          <div
+            className={
+              "lg:w-4/6 mt-8 lg:mt-16 mb-8 lg:mb-0 text-gray lg:flex lg:space-between"
+            }
+          >
             <p>{project.longDescription1}</p>
-            <p className={"ml-16"}>{project.longDescription2}</p>
+            <p className={"mt-6 lg:mt-0 lg:ml-16"}>
+              {project.longDescription2}
+            </p>
           </div>
         </div>
       </div>
