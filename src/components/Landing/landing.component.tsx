@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import Scroll from "react-scroll";
 import "./style.css";
 import TypeWriter from "../../typewriter";
 
@@ -6,7 +7,6 @@ const Landing = () => {
   useEffect(() => {
     initializeWriter();
   }, []);
-
   const initializeWriter = () => {
     const textElement = document.querySelector(".typed-intro");
 
@@ -41,8 +41,28 @@ const Landing = () => {
           </p>
 
           <ul className="mt-12 flex text-white font-thin text-2xl">
-            <li>my projects</li>
-            <li className="ml-6">about me</li>
+            <li>
+              <Scroll.Link
+                to="projects"
+                spy={true}
+                smooth={true}
+                duration={300}
+                className="cursor-pointer"
+              >
+                my projects
+              </Scroll.Link>
+            </li>
+            <li className="ml-6">
+              <Scroll.Link
+                to="about-me"
+                spy={true}
+                smooth={true}
+                duration={500}
+                className="cursor-pointer"
+              >
+                about me
+              </Scroll.Link>
+            </li>
           </ul>
         </div>
       </div>
