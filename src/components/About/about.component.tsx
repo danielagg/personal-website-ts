@@ -43,20 +43,28 @@ const About = () => {
             Who?
           </h1>
           <ul className={"text-white text-xl mt-12"}>
-            <li>
-              <span className="pr-2">
-                <FontAwesomeIcon icon={faLinkedin} />
-              </span>
-              LinkedIn
+            <li className="text-pink-300 hover:text-pink-500">
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <span className="inline-block" style={{ minWidth: "32px" }}>
+                  <FontAwesomeIcon icon={faLinkedin} />
+                </span>
+                LinkedIn
+              </a>
+            </li>
+            <li className={"mt-2 text-pink-300 hover:text-pink-500"}>
+              <a
+                href="https://www.linkedin.com/in/danielagg/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span className="inline-block" style={{ minWidth: "32px" }}>
+                  <FontAwesomeIcon icon={faFile} />
+                </span>
+                Resumé
+              </a>
             </li>
             <li className={"mt-2"}>
-              <span className="pr-2">
-                <FontAwesomeIcon icon={faFile} />
-              </span>
-              Resumé
-            </li>
-            <li className={"mt-2"}>
-              <span className="pr-2">
+              <span className="inline-block" style={{ minWidth: "32px" }}>
                 <FontAwesomeIcon icon={faEnvelope} />
               </span>
               daniel.agg@outlook.com
