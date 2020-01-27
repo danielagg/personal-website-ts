@@ -1,4 +1,5 @@
 import React from "react";
+import "./style.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import {
@@ -39,12 +40,26 @@ const PortfolioItem = ({ project }: PortfolioItemCardProp) => {
             className={"flex mt-2 text-xl"}
             style={{ color: `${getVariantColor()}` }}
           >
-            <li>View App</li>
-            <li className={"ml-12"}>
-              <span className="pr-2">
-                <FontAwesomeIcon icon={faGithub} />
-              </span>
-              View Source
+            <li className={`portfolio-link-${project.variant}`}>
+              <a
+                href={project.appLink}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View App
+              </a>
+            </li>
+            <li className={`ml-12 portfolio-link-${project.variant}`}>
+              <a
+                href={project.githubLink}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span className="pr-2">
+                  <FontAwesomeIcon icon={faGithub} />
+                </span>
+                View Source
+              </a>
             </li>
           </ul>
 

@@ -12,9 +12,9 @@ export type PortfolioItemDetails = {
 };
 
 export enum PortfolioItemVariant {
-  Purple,
-  Orange,
-  Green
+  Purple = "purple",
+  Orange = "orange",
+  Green = "green"
 }
 
 export interface PortfolioState {
