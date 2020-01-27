@@ -8,7 +8,7 @@ const LandingContainer = () => {
     <>
       <Landing />
       <PortfolioContainer />
-      {/*<About /> */}
+      <About />
     </>
   );
 };
