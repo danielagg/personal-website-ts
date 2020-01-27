@@ -18,7 +18,7 @@ module.exports = {
         },
         gray: {
           lighter: "#dedede",
-          default: "#69687d",
+          default: "#7d7d7d",
           dark: "#3b3b3b"
         }
       },
@@ -37,6 +37,9 @@ module.exports = {
       },
       borderWidth: {
         "9": "35px"
+      },
+      maxWidth: {
+        "50": "50vw"
       }
     }
   },
