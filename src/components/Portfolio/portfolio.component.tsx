@@ -3,15 +3,72 @@ import "./style.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import {
-  PortfolioItemDetails,
+  PortfolioItemDetails as Project,
   PortfolioItemVariant
 } from "../../state/PortfolioState";
 
-interface PortfolioItemCardProp {
-  project: PortfolioItemDetails;
+interface PortfolioItemProp {
+  project: Project;
 }
 
-const PortfolioItem = ({ project }: PortfolioItemCardProp) => {
+interface InnerPortfolioItemProp extends PortfolioItemProp {
+  variantColor: string;
+}
+
+const PortfolioItemDetails = ({
+  project,
+  variantColor
+}: InnerPortfolioItemProp) => {
+  return (
+    <div className={"lg:w-2/3"}>
+      <h1
+        className={
+          "text-white text-6xl lg:text-7xl font-black tracking-tighter"
+        }
+      >
+        {project.name}
+      </h1>
+      <h2 className={"text-white text-xl lg:text-2xl"}>
+        {project.shortDescription}
+      </h2>
+      <ul
+        className={"lg:flex mt-2 text-xl"}
+        style={{ color: `${variantColor}` }}
+      >
+        <li className={`mt-4 lg:mt-0 portfolio-link-${project.variant}`}>
+          <a href={project.appLink} target="_blank" rel="noopener noreferrer">
+            View App
+          </a>
+        </li>
+        <li
+          className={`lg:ml-12 mt-4 lg:mt-0 portfolio-link-${project.variant}`}
+        >
+          <a
+            href={project.githubLink}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span className="pr-2">
+              <FontAwesomeIcon icon={faGithub} />
+            </span>
+            View Source
+          </a>
+        </li>
+      </ul>
+
+      <div
+        className={
+          "lg:w-4/6 mt-8 lg:mt-16 mb-8 lg:mb-0 text-gray lg:flex lg:space-between"
+        }
+      >
+        <p>{project.longDescription1}</p>
+        <p className={"mt-6 lg:mt-0 lg:ml-16"}>{project.longDescription2}</p>
+      </div>
+    </div>
+  );
+};
+
+const PortfolioItem = ({ project }: PortfolioItemProp) => {
   const getVariantColor = () => {
     switch (project.variant) {
       case PortfolioItemVariant.Purple:
@@ -26,69 +83,22 @@ const PortfolioItem = ({ project }: PortfolioItemCardProp) => {
   };
 
   return (
-    <div className={"relative"}>
+    <div className={"relative h-full"}>
       <div
         className={"border-t-9 lg:border-t-0 lg:border-l-9 lg:min-h-screen"}
         style={{ borderColor: `${getVariantColor()}` }}
       >
-        <div className={"container py-6 lg:py-24 px-6 lg:px-12"}>
-          <h1
-            className={
-              "text-white text-6xl lg:text-7xl font-black tracking-tighter"
-            }
-          >
-            {project.name}
-          </h1>
-          <h2 className={"text-white text-xl lg:text-2xl"}>
-            {project.shortDescription}
-          </h2>
-          <ul
-            className={"lg:flex mt-2 text-xl"}
-            style={{ color: `${getVariantColor()}` }}
-          >
-            <li className={`mt-4 lg:mt-0 portfolio-link-${project.variant}`}>
-              <a
-                href={project.appLink}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                View App
-              </a>
-            </li>
-            <li
-              className={`lg:ml-12 mt-4 lg:mt-0 portfolio-link-${project.variant}`}
-            >
-              <a
-                href={project.githubLink}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <span className="pr-2">
-                  <FontAwesomeIcon icon={faGithub} />
-                </span>
-                View Source
-              </a>
-            </li>
-          </ul>
-
-          <div
-            className={
-              "lg:w-4/6 mt-8 lg:mt-16 mb-8 lg:mb-0 text-gray lg:flex lg:space-between"
-            }
-          >
-            <p>{project.longDescription1}</p>
-            <p className={"mt-6 lg:mt-0 lg:ml-16"}>
-              {project.longDescription2}
-            </p>
-          </div>
+        <div
+          className={
+            "h-full lg:h-screen flex flex-col lg:flex-col lg:justify-center lg:items-center p-8 lg:p-0"
+          }
+        >
+          <PortfolioItemDetails
+            project={project}
+            variantColor={getVariantColor()}
+          />
         </div>
       </div>
-      <h1
-        className={"absolute bottom-0 right-0 text-white text-9xl font-black"}
-        style={{ opacity: 0.05 }}
-      >
-        {project.id}
-      </h1>
     </div>
   );
 };
