@@ -7,8 +7,8 @@ const LandingContainer = () => {
   return (
     <>
       <Landing />
-      <PortfolioContainer />
-      <About />
+      {/* <PortfolioContainer />
+      <About /> */}
     </>
   );
 };
