@@ -5,10 +5,10 @@ export const Landing = () => {
   return (
     <div className="flex flex-col justify-center items-center bg-gradient-to-br from-blue-500 to-purple-500 px-6 pt-24 pb-12 xl:pb-0 xl:min-h-screen text-center xl:text-left">
       <div className="w-full xl:w-1/2 xl:-mt-32">
-        <h1 className="font-bold text-5xl xl:text-9xl text-white mb-8">
+        <h1 className="font-bold text-5xl xl:text-8xl text-white mb-8">
           Hi, I’m Dan.
         </h1>
-        <h2 className="text-2xl xl:text-5xl text-white">
+        <h2 className="text-2xl xl:text-3xl text-white">
           I’m a{" "}
           <span className="font-bold text-transparent bg-clip-text bg-gradient-to-br from-purple-200 to-purple">
             Full Stack Developer
@@ -24,7 +24,7 @@ export const Landing = () => {
           </a>
           .
         </h2>
-        <p className="text-gray text-sm xl:text-xl leading-relaxed mt-12 xl:mt-16">
+        <p className="text-gray text-sm xl:text-lg leading-relaxed mt-12 xl:mt-12">
           I’m a Full Stack Developer from Hungary with five years of experience
           in building applications for enterprises. These days, I’m working
           primarily with React, ASP.NET Core and Azure.

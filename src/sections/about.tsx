@@ -34,14 +34,14 @@ export const About = () => {
 
   return (
     <div className="bg-blue-500 px-6 py-12 xl:min-h-screen flex items-center justify-center">
-      <div className="w-full xl:w-2/3">
+      <div className="w-full xl:w-3/4">
         <div className="block xl:flex xl:space-x-24 xl:items-center xl:justify-between">
           <div className="xl:w-1/2">
             <div className="flex justify-center items-center">
               <div className="h-28 w-28 lg:h-40 lg:w-40 rounded-full bg-white" />
             </div>
 
-            <p className="text-gray text-center xl:text-justify leading-relaxed text-sm xl:text-2xl mt-12">
+            <p className="text-gray text-center xl:text-justify leading-relaxed text-sm xl:text-xl mt-12">
               I'm Daniel Agg, a 25 year old Full Stack Developer from Budapest,
               Hungary.
             </p>
@@ -81,10 +81,10 @@ export const About = () => {
                 return (
                   <div key={e.id} className="flex justify-between items-center">
                     <div>
-                      <p className="text-sm xl:text-2xl font-bold xl:font-normal">
+                      <p className="text-sm xl:text-xl font-bold">
                         {e.posiiton}
                       </p>
-                      <p className="text-gray text-xs xl:text-lg">
+                      <p className="text-gray text-xs xl:text-base">
                         @{" "}
                         <span className="underline">
                           <a
@@ -96,7 +96,7 @@ export const About = () => {
                           </a>
                         </span>
                       </p>
-                      <p className="hidden xl:block text-gray text-sm py-2 pr-12">
+                      <p className="hidden xl:block text-gray text-sm py-2 pr-12 xl:py-4">
                         {e.desc}
                       </p>
                     </div>

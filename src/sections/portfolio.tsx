@@ -74,7 +74,7 @@ export const Portfolio = () => {
         <h1 className="text-center text-2xl xl:text-6xl font-bold uppercase text-white">
           Portfolio
         </h1>
-        <div className="my-12 flex flex-col xl:grid xl:grid-cols-3 xl:gap-4 space-y-4 xl:space-y-0">
+        <div className="my-12 xl:my-24 flex flex-col xl:grid xl:grid-cols-3 xl:gap-4 space-y-4 xl:space-y-0">
           {projects.map((item) => {
             return <PortfolioCard key={item.id} data={item} />;
           })}

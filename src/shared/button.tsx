@@ -34,7 +34,7 @@ export const Button = ({
         short ? "py-2" : "py-4"
       } rounded cursor-pointer text-center flex justify-center items-center w-full`}
     >
-      <p className={`font-bold uppercase text-sm xl:text-lg`}>{text}</p>
+      <p className={`font-bold uppercase text-sm xl:text-base`}>{text}</p>
     </div>
   );
 };
