@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Button } from "../shared/button";
 import profilePic from "../assets/profile.jpeg";
+import { SocialIcon } from "react-social-icons";
 
 export const About = () => {
   const [employments] = useState([
@@ -20,7 +21,7 @@ export const About = () => {
       employerUrl: "https://glownexus.com",
       from: "2018",
       to: "2021",
-      desc: "I was employed as a full stack developer, working on a React front-, and an ASP.NET Core Web API backend. I also participated in DevOps duties and general infrastructure development with Azure. I was awarded the company's Exceeding Expectations Award in 2019.",
+      desc: "I was employed as a full stack developer, working on a React front-, and an ASP.NET Core Web API backend. I also participated in DevOps duties and general infrastructure development with Azure.",
     },
     {
       id: 3,
@@ -29,7 +30,7 @@ export const About = () => {
       employerUrl: "https://atos.net/en-hu/hungary/atos-consulting",
       from: "2016",
       to: "2018",
-      desc: "I acted as the deputy to the Technical Team Lead of a team of ~7 developers, working on UWP & WinForms applications. My duties included being a Module Owner of major change requests (responsible developer), completing code reviews after each check-in by fellow team members, as well as offering general technical guidance. I was awarded the company's quarterly Delivery Excellence Award in 2017.",
+      desc: "I acted as the deputy to the Technical Team Lead of a team of ~7 developers, working on UWP applications.",
     },
   ]);
 
@@ -53,29 +54,22 @@ export const About = () => {
               Hungary.
             </p>
             <p className="text-gray text-center xl:text-justify leading-relaxed text-sm xl:text-base mt-8">
-              I've started my career as a .NET developer, almost exclusively
-              working on ASP.NET Core backends, before deciding to immerse
-              myself in the world of modern frontend developer, aiming to become
-              a competent full-stack engineer.
-            </p>
-            <p className="text-gray text-center xl:text-justify leading-relaxed text-sm xl:text-base mt-8">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Perferendis, vero quos. Placeat libero quam in, at nam, porro
-              voluptate vitae suscipit consectetur quos, et assumenda eligendi?
-              Omnis voluptates, fuga voluptate non labore dolor voluptas error
-              vel porro.
+              I've started my career as a .NET developer, working almost
+              exclusively on ASP.NET Core backends, before deciding to immerse
+              myself in the world of modern frontend development, aiming to
+              become a competent full-stack engineer.
             </p>
 
             <p className="hidden xl:block text-gray text-center xl:text-justify leading-relaxed text-sm xl:text-base mt-8">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum
-              reiciendis ad laborum quibusdam nobis? Nisi dolore eum vero
-              tenetur. Porro ad reiciendis dolorem! Quisquam cupiditate incidunt
-              ullam distinctio dolorum totam culpa recusandae molestiae. Quas,
-              nam, harum excepturi eligendi optio atque laboriosam totam
-              molestiae a enim cum tempore ipsa natus placeat. Ratione assumenda
-              accusamus enim ab eligendi odit aliquam nam. Sit id necessitatibus
-              repellendus dolorum tempore animi ad laudantium autem, vero
-              incidunt, neque qui nulla delectus, eaque itaque!
+              As of today, on my day-to-day work I switch between developing a
+              React frontend (using Typescript, TailwindCSS and react-query), an
+              ASP.NET Core backend (following Domain Driven Design principals)
+              and general infrastructure development on Azure, with Terraform.
+            </p>
+
+            <p className="hidden xl:block text-gray text-center xl:text-justify leading-relaxed text-sm xl:text-base mt-8">
+              I hold an Azure Developer Associate (AZ-203) certification until
+              the end of this year.
             </p>
           </div>
 
@@ -103,7 +97,7 @@ export const About = () => {
                           </a>
                         </span>
                       </p>
-                      <p className="hidden xl:block text-gray text-sm py-2 pr-12 xl:py-4">
+                      <p className="hidden xl:block leading-relaxed text-gray text-sm py-2 pr-12 xl:py-4">
                         {e.desc}
                       </p>
                     </div>
@@ -114,12 +108,21 @@ export const About = () => {
                 );
               })}
             </div>
-            <Button
-              // variant="filled-pink"
-              variant="disabled"
-              text="Download my CV"
-              className="mt-12 xl:w-1/2"
-            />
+            <div className="mt-12 w-full flex items-center flex-col xl:flex-row space-y-6 xl:space-y-0 xl:space-x-8">
+              <SocialIcon
+                url="https://linkedin.com/in/danielagg"
+                bgColor="#CE1068"
+                fgColor="#fff"
+                target="_blank"
+                rel="noopener noreferrer"
+              />
+              <Button
+                // variant="filled-pink"
+                variant="disabled"
+                text="Download my CV"
+                className="xl:w-1/2"
+              />
+            </div>
           </div>
         </div>
       </div>
