@@ -29,16 +29,16 @@ export const Landing = () => {
           in building applications for enterprises. These days, I’m working
           primarily with React, ASP.NET Core and Azure.
         </p>
-        <div className="w-full flex flex-col xl:flex-row space-y-2 xl:space-x-4 items-center mt-12 xl:mt-16">
+        <div className="w-full flex flex-col xl:flex-row space-y-2 xl:space-y-0 xl:space-x-4 items-center mt-12 xl:mt-16">
           <Button
             variant="filled-pink"
             text="View my Work"
-            className="xl:w-1/4"
+            // className="xl:w-1/4"
           />
           <Button
             variant="outlined-pink"
             text="About me"
-            className="xl:w-1/4"
+            // className="xl:w-1/4"
           />
           <Button
             variant="outlined-pink"

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Button } from "../shared/button";
+import profilePic from "../assets/profile.jpeg";
 
 export const About = () => {
   const [employments] = useState([
@@ -38,7 +39,10 @@ export const About = () => {
         <div className="block xl:flex xl:space-x-24 xl:items-center xl:justify-between">
           <div className="xl:w-1/2">
             <div className="flex justify-center items-center">
-              <div className="h-28 w-28 lg:h-40 lg:w-40 rounded-full bg-white" />
+              <div
+                className="h-28 w-28 lg:h-40 lg:w-40 rounded-full bg-cover border-4 border-gray"
+                style={{ backgroundImage: `url(${profilePic})` }}
+              />
             </div>
 
             <p className="text-gray text-center xl:text-justify leading-relaxed text-sm xl:text-xl mt-12">

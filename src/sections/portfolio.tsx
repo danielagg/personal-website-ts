@@ -20,6 +20,7 @@ export const Portfolio = () => {
       desc: "Political quiz app, with a little bit of description coming here.  Really, just a few sentences to get the attention.",
       appUri: "#",
       githubRepoUri: "#",
+      isComingSoon: true,
     },
     {
       id: 2,
@@ -99,35 +100,35 @@ const PortfolioCard = ({ data }: { data: PortfolioProject }) => {
         onClick={() => setShowFullDetail(!showFullDetails)}
         className="text-center cursor-pointer flex flex-col justify-center items-center h-full"
       >
-        <h1 className="text-xl xl:text-4xl font-bold">{data.name}</h1>
+        <h1 className="text-xl xl:text-3xl font-bold">{data.name}</h1>
         <p className="text-sm xl:text-lg">{data.techs.join(", ")}</p>
+        {showFullDetails && (
+          <div className="w-full text-white">
+            <p
+              className="text-center text-xs xl:text-sm pt-3 xl:pt-8 text-white cursor-pointer"
+              onClick={() => setShowFullDetail(!showFullDetails)}
+            >
+              {data.desc}
+            </p>
+            {!data.isComingSoon && (
+              <div className="flex justify-between space-x-2 pt-6 xl:pt-6">
+                <Button
+                  short
+                  variant="filled-white"
+                  text="View App"
+                  className="w-1/2 inline-block"
+                />
+                <Button
+                  short
+                  variant="outlined-white"
+                  text="Github"
+                  className="w-1/2 inline-block"
+                />
+              </div>
+            )}
+          </div>
+        )}
       </div>
-      {showFullDetails && (
-        <div className="w-full text-white">
-          <p
-            className="text-center text-xs xl:text-base pt-3 text-white cursor-pointer"
-            onClick={() => setShowFullDetail(!showFullDetails)}
-          >
-            {data.desc}
-          </p>
-          {!data.isComingSoon && (
-            <div className="flex justify-between space-x-2 pt-6 xl:pt-8">
-              <Button
-                short
-                variant="filled-white"
-                text="View App"
-                className="w-1/2 inline-block"
-              />
-              <Button
-                short
-                variant="outlined-white"
-                text="Github"
-                className="w-1/2 inline-block"
-              />
-            </div>
-          )}
-        </div>
-      )}
     </div>
   );
 };

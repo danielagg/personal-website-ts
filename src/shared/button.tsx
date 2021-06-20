@@ -16,11 +16,11 @@ export const Button = ({
   const variantSpecificStyle = () => {
     switch (variant) {
       case "filled-pink":
-        return "bg-gradient-to-r from-purple-200 to-purple text-white hover:from-purple-200 hover:to-purple-200 hover:text-white";
+        return "bg-gradient-to-r from-purple-200 to-purple text-white border-t-4 border-b-4 border-r-0 border-l-0 border-transparent hover:from-purple-200 hover:to-purple-200 hover:text-white";
       case "outlined-pink":
         return "bg-transparent border-4 border-purple hover:bg-purple hover:text-white text-purple";
       case "filled-white":
-        return "bg-white text-purple";
+        return "bg-white text-purple border-t-4 border-b-4 border-r-0 border-l-0 border-transparent";
       case "outlined-white":
         return "bg-transparent border-4 border-white text-white";
       default:
@@ -29,12 +29,14 @@ export const Button = ({
   };
 
   return (
-    <div
-      className={`${className} ${variantSpecificStyle()} ${
-        short ? "py-2" : "py-4"
-      } rounded cursor-pointer text-center flex justify-center items-center w-full`}
-    >
-      <p className={`font-bold uppercase text-sm xl:text-base`}>{text}</p>
+    <div className="w-full">
+      <div
+        className={`${className} ${variantSpecificStyle()} ${
+          short ? "py-2" : "py-4"
+        } rounded cursor-pointer text-center flex justify-center items-center w-full`}
+      >
+        <p className={`font-bold uppercase text-sm xl:text-base`}>{text}</p>
+      </div>
     </div>
   );
 };
