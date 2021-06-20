@@ -17,7 +17,7 @@ export const Portfolio = () => {
       id: 1,
       name: "8VALUES - HU",
       techs: ["Vue 3", "Vuex", "Typescript", "SCSS"],
-      desc: "Political quiz app, with a little bit of description coming here.  Really, just a few sentences to get the attention.",
+      desc: "A rework of the popular political quiz app, 8VALUES, in Vue for Hungarian audiences.",
       appUri: "#",
       githubRepoUri: "#",
       isComingSoon: true,
@@ -89,6 +89,7 @@ const PortfolioCard = ({ data }: { data: PortfolioProject }) => {
   const [showFullDetails, setShowFullDetail] = useState(false);
   return (
     <div
+      id="portfolio"
       key={data.id}
       className={`${
         showFullDetails

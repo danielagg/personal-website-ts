@@ -9,6 +9,7 @@ module.exports = {
       "purple-200": "#F830F8",
       white: "#FFF",
       gray: "#BFBFBF",
+      "gray-500": "#636363",
       indigo: "#2E2A54",
       "indigo-200": "#6B79A7",
       transparent: "transparent",

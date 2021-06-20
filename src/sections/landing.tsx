@@ -33,12 +33,14 @@ export const Landing = () => {
           <Button
             variant="filled-pink"
             text="View my Work"
-            // className="xl:w-1/4"
+            className="xl:w-1/3"
+            href="#portfolio"
           />
           <Button
             variant="outlined-pink"
             text="About me"
-            // className="xl:w-1/4"
+            className="xl:w-1/3"
+            href="#about"
           />
           <Button
             variant="outlined-pink"

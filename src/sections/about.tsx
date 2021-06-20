@@ -34,7 +34,10 @@ export const About = () => {
   ]);
 
   return (
-    <div className="bg-blue-500 px-6 py-12 xl:min-h-screen flex items-center justify-center">
+    <div
+      id="about"
+      className="bg-blue-500 px-6 py-12 xl:min-h-screen flex items-center justify-center"
+    >
       <div className="w-full xl:w-3/4">
         <div className="block xl:flex xl:space-x-24 xl:items-center xl:justify-between">
           <div className="xl:w-1/2">
@@ -112,7 +115,8 @@ export const About = () => {
               })}
             </div>
             <Button
-              variant="filled-pink"
+              // variant="filled-pink"
+              variant="disabled"
               text="Download my CV"
               className="mt-12 xl:w-1/2"
             />
