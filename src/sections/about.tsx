@@ -108,7 +108,7 @@ export const About = () => {
                 );
               })}
             </div>
-            <div className="mt-12 w-full flex items-center flex-col xl:flex-row space-y-6 xl:space-y-0 xl:space-x-8">
+            <div className="mt-12 w-full flex items-center space-x-8">
               <SocialIcon
                 url="https://linkedin.com/in/danielagg"
                 bgColor="#CE1068"
@@ -116,11 +116,17 @@ export const About = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               />
+              <SocialIcon
+                url="https://twitter.com/a13dan"
+                target="_blank"
+                rel="noopener noreferrer"
+              />
               <Button
-                // variant="filled-pink"
-                variant="disabled"
-                text="Download my CV"
-                className="xl:w-1/2"
+                variant="filled-pink"
+                round
+                disabled
+                text="Download CV"
+                className="px-6 py-2 xl:py-3"
               />
             </div>
           </div>
