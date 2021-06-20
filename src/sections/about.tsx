@@ -74,10 +74,10 @@ export const About = () => {
           </div>
 
           <div className="text-white xl:w-1/2">
-            <h2 className="text-center xl:text-left text-lg xl:text-4xl font-bold uppercase py-8">
+            <h2 className="text-center xl:text-left mt-6 xl:mt-0 text-lg xl:text-4xl font-bold uppercase py-8">
               Experience
             </h2>
-            <div className="flex flex-col space-y-4">
+            <div className="flex flex-col space-y-6 xl:space-y-4">
               {employments.map((e) => {
                 return (
                   <div key={e.id} className="flex justify-between items-center">
@@ -108,25 +108,28 @@ export const About = () => {
                 );
               })}
             </div>
-            <div className="mt-12 w-full flex items-center space-x-8">
-              <SocialIcon
-                url="https://linkedin.com/in/danielagg"
-                bgColor="#CE1068"
-                fgColor="#fff"
-                target="_blank"
-                rel="noopener noreferrer"
-              />
-              <SocialIcon
-                url="https://twitter.com/a13dan"
-                target="_blank"
-                rel="noopener noreferrer"
-              />
+            <div className="mt-12 w-full flex items-center justify-between space-x-8">
+              <div className="flex space-x-4 xl:space-x-6 w-1/2">
+                <SocialIcon
+                  url="https://linkedin.com/in/danielagg"
+                  bgColor="#CE1068"
+                  fgColor="#fff"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                />
+                <SocialIcon
+                  url="https://twitter.com/a13dan"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                />
+              </div>
+
               <Button
                 variant="filled-pink"
                 round
                 disabled
                 text="Download CV"
-                className="px-6 py-2 xl:py-3"
+                className="w-1/2 xl:w-auto px-3 py-0 xl:py-3 xl:px-8"
               />
             </div>
           </div>
