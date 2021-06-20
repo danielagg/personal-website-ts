@@ -37,7 +37,7 @@ export const About = () => {
   return (
     <div
       id="about"
-      className="bg-blue-500 px-6 py-12 xl:min-h-screen flex items-center justify-center"
+      className="bg-gradient-to-br from-blue to-blue-500 px-6 py-12 xl:min-h-screen flex items-center justify-center"
     >
       <div className="w-full xl:w-3/4">
         <div className="block xl:flex xl:space-x-24 xl:items-center xl:justify-between">

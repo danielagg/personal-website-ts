@@ -69,7 +69,7 @@ export const Portfolio = () => {
   ]);
 
   return (
-    <div className="bg-purple-500 px-6 py-12 xl:min-h-screen flex items-center justify-center">
+    <div className="bg-gradient-to-br from-blue-500 to-purple-500 px-6 py-12 xl:min-h-screen flex items-center justify-center">
       <div className="w-full xl:w-2/3">
         <h1 className="text-center text-2xl xl:text-6xl font-bold uppercase text-white">
           Portfolio
