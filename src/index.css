@@ -5,3 +5,8 @@
 html {
   scroll-behavior: smooth !important;
 }
+
+::selection {
+  color: #fff;
+  background: #46142b;
+}
