@@ -18,7 +18,7 @@ export const Landing = () => {
             href="https://apiumhub.com"
             target="_blank"
             rel="noopener"
-            className="underline font-bold"
+            className="underline font-bold hover:text-purple"
           >
             Apiumhub
           </a>

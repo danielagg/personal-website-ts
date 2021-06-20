@@ -87,7 +87,7 @@ export const About = () => {
                       </p>
                       <p className="text-gray text-xs xl:text-base">
                         @{" "}
-                        <span className="underline">
+                        <span className="underline hover:text-purple">
                           <a
                             href={e.employerUrl}
                             target="_blank"

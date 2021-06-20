@@ -20,7 +20,6 @@ export const Portfolio = () => {
       desc: "A rework of the popular political quiz app, 8VALUES, in Vue for Hungarian audiences.",
       appUri: "#",
       githubRepoUri: "#",
-      isComingSoon: true,
     },
     {
       id: 2,
@@ -98,21 +97,29 @@ const PortfolioCard = ({ data }: { data: PortfolioProject }) => {
       } p-4 rounded-xl flex flex-col items-center space-y-2`}
     >
       <div
-        onClick={() => setShowFullDetail(!showFullDetails)}
-        className="text-center cursor-pointer flex flex-col justify-center items-center h-full"
+        onClick={() => {
+          if (!data.isComingSoon) {
+            setShowFullDetail(!showFullDetails);
+          }
+        }}
+        className={`${
+          !data.isComingSoon && "cursor-pointer"
+        } text-center flex flex-col justify-center items-center h-full`}
       >
         <h1 className="text-xl xl:text-3xl font-bold">{data.name}</h1>
         <p className="text-sm xl:text-lg">{data.techs.join(", ")}</p>
         {showFullDetails && (
           <div className="w-full text-white">
-            <p
-              className="text-center text-xs xl:text-sm pt-3 xl:pt-8 text-white cursor-pointer"
-              onClick={() => setShowFullDetail(!showFullDetails)}
-            >
-              {data.desc}
-            </p>
+            {data.desc && (
+              <p
+                className="text-center text-xs xl:text-sm mt-6 text-white cursor-pointer"
+                onClick={() => setShowFullDetail(!showFullDetails)}
+              >
+                {data.desc}
+              </p>
+            )}
             {!data.isComingSoon && (
-              <div className="flex justify-between space-x-2 pt-6 xl:pt-6">
+              <div className="flex justify-between self-end space-x-2 mt-8">
                 <Button
                   short
                   variant="filled-white"
