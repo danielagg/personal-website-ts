@@ -49,7 +49,7 @@ export const About = () => {
               />
             </div>
 
-            <p className="text-gray text-center xl:text-justify leading-relaxed text-sm xl:text-xl mt-12">
+            <p className="text-gray text-center xl:text-justify leading-relaxed text xl:text-xl mt-12">
               I'm Daniel Agg, a 25 year old Full Stack Developer from Budapest,
               Hungary.
             </p>
