@@ -3,7 +3,7 @@ import { Button } from "../shared/button";
 
 export const Intro = () => {
   return (
-    <div className="my-24 lg:my-72 flex items-center justify-center w-full lg:w-3/4 relative">
+    <div className="my-24 lg:my-64 flex items-center justify-center w-full lg:w-3/4 relative">
       <div className="hidden lg:block z-0 absolute top-0 right-0 w-96 h-96 -mt-32 -mr-32 bg-gray-100 rounded-full" />
       <div className="z-10 w-full text-right flex flex-col">
         <div className="font-bold text-4xl lg:text-7xl">Hi, I'm Dan.</div>
@@ -15,7 +15,7 @@ export const Intro = () => {
             </span>
           </a>
         </div>
-        <div className="mt-10 text-lg w-full lg:w-2/3 pl-0 lg:pl-24 self-end text-gray-500">
+        <div className="mt-10 text-lg w-full lg:w-4/5 pl-0 lg:pl-24 self-end text-gray-500">
           I'm a Hungarian full stack developer, with more than five years of
           experience in building enterprise applications. These days, I'm mostly
           working with Azure, ASP.NET Core and React.

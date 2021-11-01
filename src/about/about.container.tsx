@@ -7,13 +7,13 @@ export const About = () => {
       id="about"
       className="w-full lg:w-2/3 my-12 lg:my-32 px-4 leading-loose"
     >
-      <div className="w-full flex flex-col-reverse lg:flex-row justify-end items-center space-x-0 lg:space-x-24 text-center lg:text-right">
+      <div className="w-full flex flex-col-reverse lg:flex-row justify-end items-center space-x-0 lg:space-x-16 text-center lg:text-right">
         <div className="w-full lg:w-1/2 text-base lg:text-xl px-4 lg:px-0">
           I'm Daniel Agg, a Hungarian Full Stack Developer, with more than five
           years of experience in building applications for enterprises.
         </div>
         <img
-          className="mb-12 lg:mb-0 block h-32 lg:h-48 w-32 lg:w-48 rounded-full shadow"
+          className="mb-12 lg:mb-0 block h-32 lg:h-40 w-32 lg:w-40 rounded-full shadow"
           src={profilePic}
           alt="My profile"
         />

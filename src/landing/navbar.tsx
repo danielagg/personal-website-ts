@@ -3,7 +3,7 @@ import React from "react";
 export const Navbar = () => {
   return (
     <div className="w-full flex lg:flex-row flex-col justify-between items-center">
-      <ul className="flex space-x-10 font-medium uppercase lg:text-lg">
+      <ul className="flex space-x-10 font-medium uppercase">
         <li className="cursor-pointer hover:text-indigo-600">
           <a href="#">Home</a>
         </li>
