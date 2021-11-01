@@ -1,53 +1,25 @@
 import React from "react";
 
 export const Button = ({
-  text,
-  className,
-  onClick,
-  href,
   variant,
-  round,
-  short,
-  disabled,
+  text,
 }: {
   text: string;
-  className?: string;
-  onClick?: () => void;
-  href?: string;
-  variant: "filled-pink" | "filled-white" | "outlined-pink" | "outlined-white";
-  round?: boolean;
-  short?: boolean;
-  disabled?: boolean;
+  variant: "filled" | "outlined";
 }) => {
-  const variantSpecificStyle = () => {
+  const getStyle = () => {
     switch (variant) {
-      case "filled-pink":
-        return `${
-          disabled
-            ? "bg-gray-500 text-gray opacity-25"
-            : "bg-gradient-to-r from-purple-200 to-purple hover:from-purple-200 hover:to-purple-200 hover:text-white"
-        } text-white border-t-4 border-b-4 border-r-0 border-l-0 border-transparent`;
-      case "outlined-pink":
-        return "bg-transparent border-4 border-purple hover:bg-purple hover:text-white text-purple";
-      case "filled-white":
-        return "bg-white text-purple border-t-4 border-b-4 border-r-0 border-l-0 border-transparent";
-      case "outlined-white":
-        return "bg-transparent border-4 border-white text-white";
-      default:
-        return "";
+      case "filled":
+        return "bg-gray-700 text-white hover:bg-indigo-600";
+      case "outlined":
+        return "text-gray-700 hover:text-indigo-600";
     }
   };
-
   return (
-    <a
-      href={href}
-      className={`${className} ${variantSpecificStyle()} ${
-        short ? "py-2" : "py-4"
-      } ${!disabled && "cursor-pointer"} ${
-        round ? "rounded-full w-auto" : "rounded w-full"
-      } text-center flex justify-center items-center space-x-2`}
+    <div
+      className={`text-center border-4 border-gray-700 cursor-pointer uppercase px-12 py-4 font-bold hover:border-indigo-600 ${getStyle()}`}
     >
-      <p className={`font-bold uppercase text-sm xl:text-base`}>{text} </p>
-    </a>
+      {text}
+    </div>
   );
 };
