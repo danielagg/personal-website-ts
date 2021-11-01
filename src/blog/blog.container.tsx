@@ -5,9 +5,7 @@ import SyncLoader from "react-spinners/SyncLoader";
 import { Link } from "react-router-dom";
 import { DesktopNavbar, MobileNavbar } from "../landing/navbar";
 
-export const BlogContainer = () => {
-  const { data, isLoading, isError } = useQuery("blog-posts", getBlogPosts);
-
+export const BlogContainer = ({ children }: { children: any }) => {
   return (
     <div className="w-full mt-12 flex justify-center">
       <div className="px-12 lg:px-4 w-full lg:w-3/4">
@@ -32,11 +30,21 @@ export const BlogContainer = () => {
           </svg>
           <Link to={`/`}>Go back to the main site</Link>
         </div>
-        {isLoading && <LoadingPosts />}
-        {isError && <Error />}
-        {data && <BlogPosts posts={data} />}
+        {children}
       </div>
     </div>
+  );
+};
+
+export const AllBlogPosts = () => {
+  const { data, isLoading, isError } = useQuery("blog-posts", getBlogPosts);
+
+  return (
+    <>
+      {isLoading && <LoadingPosts />}
+      {isError && <Error />}
+      {data && <BlogPosts posts={data} />}
+    </>
   );
 };
 
@@ -96,7 +104,7 @@ const BlogPosts = ({
   }[];
 }) => {
   return (
-    <div className="mt-8 lg:mt-24 lg:p-16 flex flex-col space-y-16 lg:bg-gray-100 lg:border lg:rounded">
+    <div className="mt-8 lg:mt-24 flex flex-col space-y-16">
       {posts.map((p) => {
         return (
           <div key={p.id}>

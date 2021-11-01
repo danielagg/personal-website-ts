@@ -3,7 +3,7 @@ import { About } from "./about/about.container";
 import { Landing } from "./landing/landing.container";
 import { Portfolio } from "./portfolio/portfolio.container";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import { BlogContainer } from "./blog/blog.container";
+import { AllBlogPosts, BlogContainer } from "./blog/blog.container";
 import { QueryClient, QueryClientProvider } from "react-query";
 import { BlogPost } from "./blog/blogPost";
 
@@ -26,10 +26,14 @@ export const App = () => {
         <Router>
           <Switch>
             <Route exact path="/blog">
-              <BlogContainer />
+              <BlogContainer>
+                <AllBlogPosts />
+              </BlogContainer>
             </Route>
             <Route path="/blog/:id">
-              <BlogPost />
+              <BlogContainer>
+                <BlogPost />
+              </BlogContainer>
             </Route>
             <Route path="/">
               <div className="w-full relative">

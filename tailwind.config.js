@@ -7,10 +7,36 @@ module.exports = {
       fontFamily: {
         heebo: ["Heebo", "sans-serif"],
       },
+      typography: (theme) => ({
+        DEFAULT: {
+          css: {
+            h1: {
+              color: theme("colors.gray.700"),
+              fontFamily: ["Heebo", "sans-serif"],
+            },
+            h2: {
+              color: theme("colors.gray.700"),
+              fontFamily: ["Heebo", "sans-serif"],
+            },
+            p: {
+              color: theme("colors.gray.700"),
+              fontFamily: ["Heebo", "sans-serif"],
+            },
+          },
+        },
+        lg: {
+          css: {
+            li: {
+              padding: 0,
+              margin: 0,
+            },
+          },
+        },
+      }),
     },
   },
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/typography")],
 };
