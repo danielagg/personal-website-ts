@@ -1,5 +1,6 @@
 import React from "react";
 import { Button } from "../shared/button";
+import { MobileNavbar } from "./navbar";
 
 export const Intro = () => {
   return (
@@ -20,7 +21,10 @@ export const Intro = () => {
           experience in building enterprise applications. These days, I'm mostly
           working with Azure, ASP.NET Core and React.
         </div>
-        <div className="mt-16 flex flex-col lg:flex-row space-y-4 lg:space-y-0 lg:items-center space-x-0 lg:space-x-4 lg:self-end">
+        <div className="mt-12">
+          <MobileNavbar />
+        </div>
+        <div className="mt-8 flex flex-col lg:flex-row space-y-4 lg:space-y-0 lg:items-center space-x-0 lg:space-x-4 lg:self-end">
           <Button variant="filled" text="Download my CV" />
           <Button variant="outlined" text="Get in Touch" />
         </div>

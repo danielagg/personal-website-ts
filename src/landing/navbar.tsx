@@ -1,22 +1,25 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import { Button } from "../shared/button";
 
-export const Navbar = () => {
+export const DesktopNavbar = () => {
   return (
-    <div className="w-full flex lg:flex-row flex-col justify-between items-center">
+    <div className="w-full hidden lg:flex flex-row justify-between items-center">
       <ul className="flex space-x-10 font-medium uppercase">
         <li className="cursor-pointer hover:text-indigo-600">
-          <a href="#">Home</a>
+          <Link to="/">Home</Link>
         </li>
         <li className="cursor-pointer hover:text-indigo-600">
-          <a href="#portfolio">Portfolio</a>
+          <Link to="/#portfolio">Portfolio</Link>
         </li>
         <li className="cursor-pointer hover:text-indigo-600">
-          <a href="#about">About</a>
+          <Link to="/#about">About</Link>
         </li>
-        {/* <li className="cursor-pointer hover:text-indigo-600">Blog</li>
-        <li className="cursor-pointer hover:text-indigo-600">Contact</li> */}
+        <li className="cursor-pointer hover:text-indigo-600">
+          <Link to="/blog">Blog</Link>
+        </li>
       </ul>
-      <ul className="hidden lg:flex  space-x-4">
+      <ul className="flex space-x-4">
         <li className="cursor-pointer hover:text-indigo-600">
           <a
             href="https://www.linkedin.com/in/danielagg/"
@@ -54,6 +57,25 @@ export const Navbar = () => {
         </li>
         <li>daniel.agg@outlook.com</li>
       </ul>
+    </div>
+  );
+};
+
+export const MobileNavbar = () => {
+  return (
+    <div className="w-full flex flex-col space-y-1 lg:hidden">
+      <Button variant="outlined" small>
+        <Link to="/">Home</Link>
+      </Button>
+      <Button variant="outlined" small>
+        <Link to="/#portfolio">Portfolio</Link>
+      </Button>
+      <Button variant="outlined" small>
+        <Link to="/#about">About</Link>
+      </Button>
+      <Button variant="outlined" small>
+        <Link to="/blog">Blog</Link>
+      </Button>
     </div>
   );
 };
