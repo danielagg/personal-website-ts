@@ -21,6 +21,7 @@ module.exports = {
             p: {
               color: theme("colors.gray.700"),
               fontFamily: ["Heebo", "sans-serif"],
+              overflowWrap: "break-word",
             },
           },
         },
